@@ -11,4 +11,8 @@ public class Keyboard implements USB {
         System.out.println("Keyboard close");
 
     }
+
+    public void type(){
+        System.out.println("enter...");
+    }
 }

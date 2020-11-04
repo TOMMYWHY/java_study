@@ -15,6 +15,7 @@ public class DemoMain {
 
         Keyboard keyboard = new Keyboard();
         computer.useDevice(keyboard); // 自动类型转换
+
         computer.powerOff();
     }
 }
