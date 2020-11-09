@@ -1,0 +1,5 @@
+div exception...
+exception name:ArithmeticException
+exception name:/ by zero
+---------
+ total get exception:1
