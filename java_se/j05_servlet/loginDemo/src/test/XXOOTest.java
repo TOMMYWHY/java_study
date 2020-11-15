@@ -10,7 +10,7 @@ public class XXOOTest {
 
     @Test
     public void jdbcTest() throws SQLException, ClassNotFoundException {
-        Class.forName("com.mysql.jdbc.Driver");  //通过静态代码块加载
+        Class.forName("com.mysql.jdbc.Driver");  //通过静态代码块来注册驱动
         Connection conn = DriverManager.getConnection(
                 "jdbc:mysql///user",
                 "root",
