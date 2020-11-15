@@ -26,13 +26,13 @@ public class LoginServlet extends HttpServlet{
         loginUser.setPassword(password);*/
 
         /*
-        * 使用 BeanUtils 代替上面req 参数对象封装
+        * 使用 BeanUtils 代替上 面req 参数对象封装
         * */
         Map<String, String[]> parameterMap = req.getParameterMap();
         User loginUser = new User();
         try {
             BeanUtils.populate(loginUser,parameterMap);
-        } catch (IllegalAccessException e) {
+        } catch (IllegalAccessException  e) {
             e.printStackTrace();
         } catch (InvocationTargetException e) {
             e.printStackTrace();
