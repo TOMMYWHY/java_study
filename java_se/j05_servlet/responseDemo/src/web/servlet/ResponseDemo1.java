@@ -20,7 +20,12 @@ public class ResponseDemo1 extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 //        super.doPost(req, resp);
         System.out.println("demo1 visited");
-        resp.setStatus(302);
-        resp.setHeader("location","/response/responseDemo2");
+       /* resp.setStatus(302);
+        resp.setHeader("location","/response/responseDemo2");*/
+//        resp.sendRedirect("/response/responseDemo2");
+        String contextPath = req.getContextPath();
+        resp.sendRedirect(contextPath+"/responseDemo2");
+
+
     }
 }
