@@ -13,8 +13,7 @@ public class CookieServletDemo2 extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         Cookie[] cs = request.getCookies();
         if(cs!=null){
-            for (Cookie c :cs
-                    ) {
+            for (Cookie c :cs) {
                 String name = c.getName();
                 String value = c.getValue();
                 System.out.println("name:"+name+" value:"+value);
