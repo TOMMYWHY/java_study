@@ -11,6 +11,14 @@
     <title>$Title$</title>
   </head>
   <body>
-  $END$
+  <hr>
+  <%
+    String contextPath = request.getContextPath();
+    out.print(contextPath);
+  %>
+  <hr>
+  <%
+    response.getWriter().write("hello a");
+  %>
   </body>
 </html>
