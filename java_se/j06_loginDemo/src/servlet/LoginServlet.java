@@ -19,7 +19,8 @@ public class LoginServlet extends HttpServlet {
         String checkCode = request.getParameter("checkCode");
         HttpSession session = request.getSession();
         String checkCode_session = (String)session.getAttribute("checkCode_session");
-        if (checkCode_session.equalsIgnoreCase(checkCode)){
+        session.removeAttribute("checkCode_session");
+        if (checkCode_session!=null && checkCode_session.equalsIgnoreCase(checkCode)){
             if("tommy".equals(username) && "123".equals(password)){
                 session.setAttribute("user",username);
                 response.sendRedirect(request.getContextPath()+"/success.jsp");
