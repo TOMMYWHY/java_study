@@ -12,7 +12,7 @@ public class AjaxServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String username = request.getParameter("username");
         System.out.println("wocao:"+username);
-        response.getWriter().write("username: "+username);
+        response.getWriter().write("hello username: "+username);
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

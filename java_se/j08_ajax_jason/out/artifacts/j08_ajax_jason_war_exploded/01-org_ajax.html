@@ -14,6 +14,13 @@
             }
             xmlhttp.open("GET","ajaxServlet?username=tommy",true);
             xmlhttp.send();
+
+            xmlhttp.onreadystatechange=function (){
+                if(xmlhttp.readyState==4 && xmlhttp.status==200){
+                    let responseText = xmlhttp.responseText;
+                    alert(responseText)
+                }
+            }
         }
     </script>
 </head>
