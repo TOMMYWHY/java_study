@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/cookieLoginDemo/cookieLoginDemo.iml" filepath="$PROJECT_DIR$/cookieLoginDemo/cookieLoginDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo01_annotation/demo01_annotation.iml" filepath="$PROJECT_DIR$/demo01_annotation/demo01_annotation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/downloadDemo/downloadDemo.iml" filepath="$PROJECT_DIR$/downloadDemo/downloadDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/j05_servlet.iml" filepath="$PROJECT_DIR$/j05_servlet.iml" />
+      <module fileurl="file://$PROJECT_DIR$/loginDemo/loginDemo.iml" filepath="$PROJECT_DIR$/loginDemo/loginDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/responseDemo/responseDemo.iml" filepath="$PROJECT_DIR$/responseDemo/responseDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/session_cookie/session_cookie.iml" filepath="$PROJECT_DIR$/session_cookie/session_cookie.iml" />
+    </modules>
+  </component>
+</project>

@@ -13,6 +13,8 @@
 <body>
     <h1>
         <%=request.getSession().getAttribute("user")%>, welcome back~!
+
+        <% request.setAttribute();%>
     </h1>
 </body>
 </html>

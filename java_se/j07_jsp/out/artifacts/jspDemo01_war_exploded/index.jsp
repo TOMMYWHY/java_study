@@ -29,6 +29,8 @@
   <br>
   <c:if test="${num % 2 !=0}">
     ${num}
+
+
   </c:if>
   </body>
 </html>
