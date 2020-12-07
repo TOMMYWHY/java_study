@@ -16,7 +16,7 @@ public class MyApp {
         SqlSessionFactoryBuilder builder = new SqlSessionFactoryBuilder();
         SqlSessionFactory factory = builder.build(in);
         SqlSession sqlSession = factory.openSession();
-        String sqlId = "com.tommy.why.Student" + "."+"selectStudents";
+        String sqlId = "com.tommy.why.dao.StudentDao" + "."+"selectStudents";
         List<Student> studentList = sqlSession.selectList(sqlId);
 //        studentList.forEach(stu-> System.out.println(stu));
         for (Student stu:studentList){
