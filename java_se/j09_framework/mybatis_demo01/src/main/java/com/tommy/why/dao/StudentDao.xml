@@ -8,4 +8,13 @@
     select * from Student order by id
 
   </select>
+
+    <insert id="insertStudent">
+        insert into student value(#{id},#{name},#{age},null,null ,null )
+    </insert>
+
+    <select id="selectMultiParam" resultType="com.tommy.why.Student">
+            select * from Student where name=#{myName} or age=#{myAge}
+
+    </select>
 </mapper>
