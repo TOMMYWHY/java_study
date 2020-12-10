@@ -5,7 +5,6 @@
         http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <!--        SomeService someService = new SomeServiceImpl();-->
-    <bean id="someService" class="com.tommy.why.service.impl.SomeServiceImpl">
-
-    </bean>
+    <bean id="someService" class="com.tommy.why.service.impl.SomeServiceImpl" />
+    <bean id="myDate" class="java.util.Date" />
 </beans>
