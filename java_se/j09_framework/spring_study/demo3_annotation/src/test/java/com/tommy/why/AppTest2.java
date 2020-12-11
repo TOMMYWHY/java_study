@@ -1,8 +1,6 @@
 package com.tommy.why;
 
-import static org.junit.Assert.assertTrue;
-
-import com.tommy.why.ba01.Student;
+import com.tommy.why.ba02.Student;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -10,7 +8,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 /**
  * Unit test for simple App.
  */
-public class AppTest 
+public class AppTest2
 {
     /**
      * Rigorous Test :-)

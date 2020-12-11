@@ -1,4 +1,4 @@
-package com.tommy.why.ba02;
+package com.tommy.why.ba03;
 
 public class Student {
     private String name;

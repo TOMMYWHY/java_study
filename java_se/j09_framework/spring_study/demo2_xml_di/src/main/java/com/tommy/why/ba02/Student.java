@@ -1,8 +1,18 @@
-package com.tommy.why.ba01;
+package com.tommy.why.ba02;
 
 public class Student {
     private String name;
     private int age;
+
+    public Student() {
+        System.out.println("none param constructor~!");
+    }
+
+    public Student(String myname, int myage) {
+        System.out.println("param constructor~!");
+        this.name = myname;
+        this.age = myage;
+    }
 
     @Override
     public String toString() {
@@ -13,12 +23,10 @@ public class Student {
     }
 
     public void setName(String name) {
-        System.out.println("setname:"+name);
         this.name = name;
     }
 
     public void setAge(int age) {
-        System.out.println("setage:"+age);
         this.age = age;
     }
 }
