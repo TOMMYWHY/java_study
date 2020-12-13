@@ -1,5 +1,6 @@
 package com.tommy.why.ba01;
 
+import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
 
@@ -19,8 +20,18 @@ public class MyAspect {
 //    }
 
     @Before(value = "execution( * *..SomeServiceImpl.d*(.. ))")
-    public void myBefore(){
+    public void myBefore(JoinPoint jp){
+
         System.out.println("4 before---: "+ new Date());
+
+
+        System.out.println("class defined:"+jp.getSignature());
+        System.out.println("fun name:"+jp.getSignature().getName());
+        Object[] args = jp.getArgs();
+        for (Object arg: args){
+            System.out.println("fun params:"+arg);
+        }
+
     }
 }
 
