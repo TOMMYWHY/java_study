@@ -6,11 +6,23 @@ import com.tommy.why.entity.Goods;
 import com.tommy.why.entity.Sale;
 import com.tommy.why.excep.NotEnoughException;
 import com.tommy.why.service.BuyGoodsService;
+import org.springframework.transaction.annotation.Isolation;
+import org.springframework.transaction.annotation.Propagation;
+import org.springframework.transaction.annotation.Transactional;
 
 public class BuyGoodsServiceImpl implements BuyGoodsService {
     private SaleDao saleDao;
     private GoodsDao goodsDao;
 
+    @Transactional(
+            propagation = Propagation.REQUIRED,
+            isolation = Isolation.DEFAULT,
+            readOnly = false,
+            rollbackFor = {
+                    NullPointerException.class,
+                    NotEnoughException.class
+            }
+    )
     @Override
     public void buy(Integer goodsId, Integer nums) {
         Sale sale = new Sale();
