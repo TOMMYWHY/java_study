@@ -14,7 +14,7 @@ public class MyTest {
         ApplicationContext ctx =  new ClassPathXmlApplicationContext(config);
         BuyGoodsService buyGoodsService =(BuyGoodsService) ctx.getBean("BuyGoodsService");
         System.out.println("service:"+ buyGoodsService);
-        buyGoodsService.buy(1,13);
+        buyGoodsService.buy(1,16);
 //        buyGoodsService.buy(10,10);
 //        buyGoodsService.buy(1,  200);
 

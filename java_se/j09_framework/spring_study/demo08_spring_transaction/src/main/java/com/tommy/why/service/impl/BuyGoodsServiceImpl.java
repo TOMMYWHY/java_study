@@ -14,7 +14,7 @@ public class BuyGoodsServiceImpl implements BuyGoodsService {
     private SaleDao saleDao;
     private GoodsDao goodsDao;
 
-    @Transactional(
+    /*@Transactional(
             propagation = Propagation.REQUIRED,
             isolation = Isolation.DEFAULT,
             readOnly = false,
@@ -22,7 +22,7 @@ public class BuyGoodsServiceImpl implements BuyGoodsService {
                     NullPointerException.class,
                     NotEnoughException.class
             }
-    )
+    )*/
     @Override
     public void buy(Integer goodsId, Integer nums) {
         Sale sale = new Sale();
