@@ -5,10 +5,10 @@
 
 <mapper namespace="com.tommy.why.dao.StudentDao">
         <insert id="insertStudent">
-            insert into student values(#{id},#{name},#{age},#{score},#{birthday},#{insert_time})
+            insert into student values(#{id},#{name},#{age},#{score})
         </insert>
 
         <select id="selectStudents" resultType="com.tommy.why.entity.Student">
-            select id,name,score,birthday,insert_time from student order by id desc
+            select id,name,score from student order by id desc
         </select>
 </mapper>

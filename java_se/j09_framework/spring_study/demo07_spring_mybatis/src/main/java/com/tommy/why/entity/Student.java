@@ -5,17 +5,6 @@ public class Student {
     private String name;
     private Integer age;
     private Integer score;
-    private String birthday;
-    private String insert_time;
-
-    public Student(Integer id, String name, Integer age, Integer score, String birthday, String insert_time) {
-        this.id = id;
-        this.name = name;
-        this.age = age;
-        this.score = score;
-        this.birthday = birthday;
-        this.insert_time = insert_time;
-    }
 
     @Override
     public String toString() {
@@ -24,8 +13,6 @@ public class Student {
                 ", name='" + name + '\'' +
                 ", age=" + age +
                 ", score=" + score +
-                ", birthday='" + birthday + '\'' +
-                ", insert_time='" + insert_time + '\'' +
                 '}';
     }
 
@@ -61,24 +48,13 @@ public class Student {
         this.score = score;
     }
 
-    public String getBirthday() {
-        return birthday;
-    }
-
-    public void setBirthday(String birthday) {
-        this.birthday = birthday;
-    }
-
-    public String getInsert_time() {
-        return insert_time;
-    }
-
-    public void setInsert_time(String insert_time) {
-        this.insert_time = insert_time;
-    }
-
     public Student() {
     }
 
-
+    public Student(Integer id, String name, Integer age, Integer score) {
+        this.id = id;
+        this.name = name;
+        this.age = age;
+        this.score = score;
+    }
 }

@@ -9,7 +9,7 @@
     </settings>
 
     <typeAliases>
-        <package name="com.tommy.why.entity.Student"/>
+        <package name="com.tommy.why.entity"/>
     </typeAliases>
 
     <mappers>

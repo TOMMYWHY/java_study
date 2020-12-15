@@ -32,7 +32,7 @@ public class AppTest
        StudentDao dao = (StudentDao) ctx.getBean("studentDao");
        System.out.println("dao:"+dao);
 //       Student gay = new Student(2010, "gay",18, 59, null, null);
-       Student gay = new Student(2020,"shabi",73,59,null,null);
+       Student gay = new Student(2022,"shabiaaa",73,59);
        int result=  dao.insertStudent(gay);
        System.out.println("result:"+result);
    }
@@ -43,7 +43,7 @@ public class AppTest
       ApplicationContext ctx = new ClassPathXmlApplicationContext(config);
 
       StudentService service = (StudentService) ctx.getBean("studentService");
-      Student gay = new Student(2021,"gayby",82,39,null,null);
+      Student gay = new Student(2021,"gayby",82,39);
       int result=  service.addStudent(gay);
       System.out.println("result:"+result);
    }

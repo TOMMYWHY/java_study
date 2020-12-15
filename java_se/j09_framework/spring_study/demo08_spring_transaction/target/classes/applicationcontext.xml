@@ -30,8 +30,10 @@
 
     </bean>
 
-    <bean id="studentService" class="com.tommy.why.service.impl.StudentServiceImpl">
-        <property name="studentDao"  ref="studentDao"/>
+    <bean id="BuyGoodsService" class="com.tommy.why.service.impl.BuyGoodsServiceImpl">
+        <property name="goodsDao"  ref="goodsDao"/>
+        <property name="saleDao" ref="saleDao"/>
+
     </bean>
 
 </beans>
