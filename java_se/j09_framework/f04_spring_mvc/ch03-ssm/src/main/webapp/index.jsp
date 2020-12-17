@@ -29,7 +29,7 @@
         <hr>
         <table>
             <tr><td><a href="addStudent.jsp">register student</a> </td></tr>
-            <tr><td>select students</td></tr>
+            <tr><td><a href="listStudent.jsp"> select students </a> </td></tr>
         </table>
     </div>
  

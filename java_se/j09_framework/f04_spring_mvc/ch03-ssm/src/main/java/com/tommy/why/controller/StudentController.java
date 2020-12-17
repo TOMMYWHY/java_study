@@ -4,9 +4,11 @@ import com.tommy.why.entity.Student;
 import com.tommy.why.service.StudentService;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.annotation.Resource;
+import java.util.List;
 
 @Controller
 @RequestMapping("/student")
@@ -27,5 +29,13 @@ public class StudentController {
         mv.addObject("tips",tips);
         mv.setViewName("result");
         return mv;
+    }
+
+
+    @RequestMapping("/queryStudents.do")
+    @ResponseBody
+    public List<Student> queryStudents(){
+        List<Student> students = service.findStudents();
+        return students;
     }
 }
