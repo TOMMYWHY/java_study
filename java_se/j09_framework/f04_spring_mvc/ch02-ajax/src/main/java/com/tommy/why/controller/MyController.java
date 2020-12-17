@@ -5,6 +5,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.tommy.why.controller.ov.Student;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
@@ -43,5 +44,18 @@ public class MyController {
         writer.println(json);
         writer.flush();
         writer.close();
+    }
+
+
+    @RequestMapping(value = "/returnStudentJson.do")
+    @ResponseBody
+    public Student doStudentJsonObj(HttpServletRequest request,
+                                 HttpServletResponse response,
+                                 String name,
+                                 Integer age
+    ) throws IOException {
+        Student student = new Student(name+" why", age+10);
+
+        return student;
     }
 }
