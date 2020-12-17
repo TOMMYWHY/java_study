@@ -33,5 +33,5 @@
     <context:component-scan base-package="com.tommy.why.service" />
 
         <!-- transactionL annotation or aspectj           -->
-    
+
 </beans>
