@@ -1,2 +1,16 @@
-package com.tommy.why.web;public class IndexController {
+package com.tommy.why.web;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+@Controller
+public class IndexController {
+
+    @RequestMapping(value = "/springboot/greeting")
+    @ResponseBody
+    public String greeting() {
+        return "hello tommy~!!!";
+    }
 }
+
