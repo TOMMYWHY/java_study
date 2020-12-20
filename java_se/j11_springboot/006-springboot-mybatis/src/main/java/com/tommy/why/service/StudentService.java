@@ -7,4 +7,6 @@ import org.springframework.stereotype.Service;
 public interface StudentService {
 
     Student queryStudentById(Integer id);
+
+    int updateStudentById(Student student);
 }
