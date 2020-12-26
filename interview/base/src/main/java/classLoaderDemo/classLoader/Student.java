@@ -1,2 +1,4 @@
-package classLoaderDemo.classLoader;public class Student {
+package classLoaderDemo.classLoader;
+
+public class Student {
 }

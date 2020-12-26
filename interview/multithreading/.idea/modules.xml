@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/demoThread/demoThread.iml" filepath="$PROJECT_DIR$/demoThread/demoThread.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/multithreading.iml" filepath="$PROJECT_DIR$/.idea/multithreading.iml" />
+    </modules>
+  </component>
+</project>
