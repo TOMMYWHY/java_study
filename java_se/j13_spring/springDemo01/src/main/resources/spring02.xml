@@ -5,8 +5,11 @@
         https://www.springframework.org/schema/beans/spring-beans.xsd">
 
 
-   <bean id="userDao" class="com.tommy.why.service.UserService"/>
+   <bean id="userDao1" class="com.tommy.why.dao.UserDao" />
+   <bean id="userService" class="com.tommy.why.service.UserService">
+      <property name="userDaoo" ref="userDao1" />
+   </bean>
 
-   <import resource="beans.xml" />
+<!--   <import resource="beans.xml" />-->
 
 </beans>

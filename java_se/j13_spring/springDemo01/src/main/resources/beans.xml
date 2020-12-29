@@ -4,9 +4,6 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
         https://www.springframework.org/schema/beans/spring-beans.xsd">
 
-
-   <bean id="userDao" class="com.tommy.why.service.UserService"/>
-
+   <bean id="userService" class="com.tommy.why.service.UserService" />
    <import resource="beans.xml" />
-
 </beans>
