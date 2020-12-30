@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <bean id="address" class="com.tommy.why.Address"></bean>
+    <bean id="student" class="com.tommy.why.Student">
+        <property name="name" value="tommy" />
+        <property name="address" ref="address" />
+        <property name="books">
+           <array>
+               <value>java</value>
+               <value>php</value>
+               <value>c++</value>
+           </array>
+        </property>
+
+        <property name="hobbies">
+            <list>
+                <value>coding</value>
+                <value>singing</value>
+                <value>ski</value>
+            </list>
+        </property>
+
+        <property name="card" >
+            <map>
+                <entry key="passport" value="123123" />
+                <entry key="cardNb" value="456456" />
+            </map>
+        </property>
+
+        <property name="games">
+            <set>
+                <value>lol</value>
+                <value>moba</value>
+            </set>
+        </property>
+
+        <property name="wife">
+            <null />
+        </property>
+
+        <property name="info">
+            <props>
+                <prop key="ip">127.168.1.1</prop>
+                <prop key="db">mysql</prop>
+            </props>
+        </property>
+    </bean>
+
+</beans>
