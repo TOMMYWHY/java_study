@@ -1,7 +1,7 @@
 package lazySingleton;
 
 public class Singleton5 {
-    private static Singleton5 instance = null;
+    private static volatile Singleton5 instance = null;
 
     private Singleton5() {
     }
