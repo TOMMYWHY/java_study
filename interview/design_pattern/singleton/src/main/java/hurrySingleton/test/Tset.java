@@ -3,6 +3,9 @@ package hurrySingleton.test;
 import hurrySingleton.SingletonDemo1;
 import org.junit.jupiter.api.Test;
 
+import java.lang.reflect.Constructor;
+import java.lang.reflect.InvocationTargetException;
+
 public class Tset {
     @Test
     public void  test1(){
@@ -24,5 +27,17 @@ public class Tset {
                     }
                 }).start();
         }
+    }
+
+    @Test
+    public void test03() throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException {
+        Class clazz = SingletonDemo1.class;
+        Constructor constructor = clazz.getDeclaredConstructor();
+        constructor.setAccessible(true);
+        SingletonDemo1 s1 = SingletonDemo1.getInstence();
+        SingletonDemo1 s2 = (SingletonDemo1) constructor.newInstance();
+        System.out.println("s1:"+s1);
+        System.out.println("s2:"+s2);
+        System.out.println(s1 == s2);
     }
 }
