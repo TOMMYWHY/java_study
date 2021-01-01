@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="ch02-ajax:war">
+    <output-path>$PROJECT_DIR$/../j09_framework/f04_spring_mvc/ch02-ajax/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>ch02-ajax</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="ch02-ajax-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="ch02-ajax:war exploded" />
+    </root>
+  </artifact>
+</component>

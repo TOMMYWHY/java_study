@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="ch04-interceptor-permission:war">
+    <output-path>$PROJECT_DIR$/../spring_studych04-interceptor-permission/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>ch04-interceptor-permission</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="ch04-interceptor-permission.war">
+      <element id="artifact" artifact-name="ch04-interceptor-permission:war exploded" />
+    </root>
+  </artifact>
+</component>

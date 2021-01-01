@@ -11,6 +11,7 @@
     <modules>
         <module>spring-01-ioc1</module>
         <module>spring-02-di</module>
+        <module>spring-03-autowried</module>
     </modules>
 
 

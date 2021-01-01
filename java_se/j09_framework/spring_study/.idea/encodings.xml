@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/demo06_aop_aspectj/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo06_aop_aspectj/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo07_spring_mybatis/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo07_spring_mybatis/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo08_spring_transaction/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo08_spring_transaction/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo09_web_spring/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo09_web_spring/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo1_hello/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo1_hello/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo2_xml_di/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo2_xml_di/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo3_annotation/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo3_annotation/src/main/resources" charset="UTF-8" />
+  </component>
+</project>

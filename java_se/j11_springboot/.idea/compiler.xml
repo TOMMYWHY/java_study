@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="003-springboot-context_path" />
+        <module name="ch02-ajax" />
+        <module name="007-springboot-thymeleaf" />
+        <module name="004-springboot-properties-yml-yaml" />
+        <module name="005-springboot-jsp" />
+        <module name="001-spirngboot-demo" />
+        <module name="003-context_path" />
+        <module name="006-springboot-mybatis" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="001-spirngboot-demo" target="1.8" />
+      <module name="002-springboot-springmvc" target="1.8" />
+      <module name="003-context_path" target="1.8" />
+      <module name="003-springboot-context_path" target="1.8" />
+      <module name="004-springboot-properties-yml-yaml" target="1.8" />
+      <module name="005-springboot-jsp" target="1.8" />
+      <module name="006-springboot-mybatis" target="1.8" />
+      <module name="007-springboot-thymeleaf" target="1.8" />
+      <module name="ch02-ajax" target="1.7" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="001-spirngboot-demo" options="-parameters" />
+      <module name="002-springboot-springmvc" options="-parameters" />
+      <module name="003-context_path" options="-parameters" />
+      <module name="003-springboot-context_path" options="-parameters" />
+      <module name="004-springboot-properties-yml-yaml" options="-parameters" />
+      <module name="005-springboot-jsp" options="-parameters" />
+      <module name="006-springboot-mybatis" options="-parameters" />
+      <module name="007-springboot-thymeleaf" options="-parameters" />
+    </option>
+  </component>
+</project>

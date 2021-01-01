@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/j13_spring.iml" filepath="$PROJECT_DIR$/.idea/j13_spring.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springDemo03/spring-01-ioc1/spring-01-ioc1.iml" filepath="$PROJECT_DIR$/springDemo03/spring-01-ioc1/spring-01-ioc1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springDemo03/spring-02-di/spring-02-di.iml" filepath="$PROJECT_DIR$/springDemo03/spring-02-di/spring-02-di.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springDemo03/spring-03-autowried/spring-03-autowried.iml" filepath="$PROJECT_DIR$/springDemo03/spring-03-autowried/spring-03-autowried.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springDemo01/springDemo01.iml" filepath="$PROJECT_DIR$/springDemo01/springDemo01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springDemo02_self/springDemo02_self.iml" filepath="$PROJECT_DIR$/springDemo02_self/springDemo02_self.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springDemo03/springDemo03.iml" filepath="$PROJECT_DIR$/springDemo03/springDemo03.iml" />
+    </modules>
+  </component>
+</project>

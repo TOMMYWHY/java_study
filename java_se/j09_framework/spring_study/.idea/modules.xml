@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/demo06_aop_aspectj/demo06_aop_aspectj.iml" filepath="$PROJECT_DIR$/demo06_aop_aspectj/demo06_aop_aspectj.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo07_spring_mybatis/demo07_spring_mybatis.iml" filepath="$PROJECT_DIR$/demo07_spring_mybatis/demo07_spring_mybatis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo08_spring_transaction/demo08_spring_transaction.iml" filepath="$PROJECT_DIR$/demo08_spring_transaction/demo08_spring_transaction.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo09_web_spring/demo09_web_spring.iml" filepath="$PROJECT_DIR$/demo09_web_spring/demo09_web_spring.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo1_hello/demo1_hello.iml" filepath="$PROJECT_DIR$/demo1_hello/demo1_hello.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo2_xml_di/demo2_xml_di.iml" filepath="$PROJECT_DIR$/demo2_xml_di/demo2_xml_di.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo3_annotation/demo3_annotation.iml" filepath="$PROJECT_DIR$/demo3_annotation/demo3_annotation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo4_iop/demo4_iop.iml" filepath="$PROJECT_DIR$/demo4_iop/demo4_iop.iml" />
+    </modules>
+  </component>
+</project>

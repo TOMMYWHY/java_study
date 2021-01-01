@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="demo3_annotation" />
+        <module name="demo08_spring_transaction" />
+        <module name="demo09_web_spring" />
+        <module name="demo06_aop_aspectj" />
+        <module name="demo1_hello" />
+        <module name="demo07_spring_mybatis" />
+        <module name="demo2_xml_di" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="demo05_aop" target="1.5" />
+      <module name="demo06_aop_aspectj" target="1.8" />
+      <module name="demo07_spring_mybatis" target="1.8" />
+      <module name="demo08_spring_transaction" target="1.8" />
+      <module name="demo09_web_spring" target="1.8" />
+      <module name="demo1_hello" target="1.8" />
+      <module name="demo2_xml_di" target="1.8" />
+      <module name="demo3_annotation" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
