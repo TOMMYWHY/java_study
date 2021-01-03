@@ -11,7 +11,6 @@
     <title>$Title$</title>
   </head>
   <body>
-  $END$
   <h2><a href="${pageContext.request.contextPath}/book/allBook">all books</a></h2>
   </body>
 </html>
