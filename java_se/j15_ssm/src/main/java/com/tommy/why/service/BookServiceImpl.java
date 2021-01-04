@@ -36,4 +36,8 @@ public class BookServiceImpl implements BookService {
     public List<Books> queryAllBooks() {
         return bookMapper.queryAllBooks();
     }
+
+    public Books queryBookByName(String bookName) {
+        return bookMapper.queryBookByName(bookName);
+    }
 }

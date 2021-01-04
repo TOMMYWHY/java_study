@@ -16,6 +16,15 @@
     <hr>
     <div>
         <a href="${pageContext.request.contextPath}/book/toAddBook">add book</a>
+        <a href="${pageContext.request.contextPath}/book/allBook"> all books</a>
+    </div>
+    <div>
+        <span>${err}</span>
+
+        <form action="${pageContext.request.contextPath}/book/search" method="post">
+            <input type="text" name="queryBookName">
+            <input type="submit" value="search">
+        </form>
     </div>
     <hr>
     <div>

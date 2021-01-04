@@ -10,4 +10,6 @@ public interface BookService {
     int updateBook(Books book);
     Books queryBookById(int id);
     List<Books> queryAllBooks();
+
+    Books queryBookByName(String bookName);
 }
