@@ -1,0 +1,16 @@
+server:
+  port: 8080
+
+person:
+  name: tommy
+  age: 18
+  happy: false
+  birth: 1989/11/27
+  map: {k1: v1, k2: v2}
+  list:
+    - php
+    - java
+    - js
+  dog:
+    name: feifei
+    age: 20

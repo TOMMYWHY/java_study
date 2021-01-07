@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.tommy.why</groupId>
-	<artifactId>demo</artifactId>
+	<artifactId>springboot02-config</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>springboot01_helloWorld</name>
+	<name>springboot02-config</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
@@ -19,11 +19,6 @@
 	</properties>
 
 	<dependencies>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter</artifactId>
-		</dependency>
-
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
@@ -34,13 +29,6 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-configuration-processor</artifactId>
-			<optional>true</optional>
-		</dependency>
-
 	</dependencies>
 
 	<build>
