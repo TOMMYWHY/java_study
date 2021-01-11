@@ -13,6 +13,7 @@
         <module>springmvc-02-hellomvc</module>
         <module>springmvc-04-annotation</module>
         <module>springmvc-05-ssm</module>
+        <module>springmvc-06-sourcecode</module>
     </modules>
 
 

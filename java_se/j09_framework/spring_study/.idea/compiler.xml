@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="demo3_annotation" />
+        <module name="demo10_sourcecode" />
         <module name="demo08_spring_transaction" />
         <module name="demo09_web_spring" />
         <module name="demo06_aop_aspectj" />
@@ -21,6 +22,7 @@
       <module name="demo07_spring_mybatis" target="1.8" />
       <module name="demo08_spring_transaction" target="1.8" />
       <module name="demo09_web_spring" target="1.8" />
+      <module name="demo10_sourcecode" target="1.7" />
       <module name="demo1_hello" target="1.8" />
       <module name="demo2_xml_di" target="1.8" />
       <module name="demo3_annotation" target="1.8" />

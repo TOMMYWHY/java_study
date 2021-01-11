@@ -14,5 +14,8 @@
         <module name="springmvc-02-hellomvc" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="springmvc-06-sourcecode" target="1.5" />
+    </bytecodeTargetLevel>
   </component>
 </project>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/j16_springboot.iml" filepath="$PROJECT_DIR$/.idea/j16_springboot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot01-hello/springboot01-hello.iml" filepath="$PROJECT_DIR$/springboot01-hello/springboot01-hello.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot02-config/springboot02-config.iml" filepath="$PROJECT_DIR$/springboot02-config/springboot02-config.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot03-web/springboot03-web.iml" filepath="$PROJECT_DIR$/springboot03-web/springboot03-web.iml" />
+    </modules>
+  </component>
+</project>
