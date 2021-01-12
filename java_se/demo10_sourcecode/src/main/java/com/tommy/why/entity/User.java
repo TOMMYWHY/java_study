@@ -1,5 +1,8 @@
 package com.tommy.why.entity;
 
+import com.tommy.why.annotation.MyAnn;
+
+@MyAnn(content = "contenttttt")
 public class User {
     private int id;
     private String name;
