@@ -9,8 +9,8 @@ import java.lang.reflect.InvocationTargetException;
 public class Tset {
     @Test
     public void  test1(){
-        SingletonDemo1 s1 = SingletonDemo1.getInstence();
-        SingletonDemo1 s2 = SingletonDemo1.getInstence();
+        SingletonDemo1 s1 = SingletonDemo1.getInstance();
+        SingletonDemo1 s2 = SingletonDemo1.getInstance();
 
         System.out.println("s1:"+s1);
         System.out.println("s2:"+s2);
@@ -23,7 +23,7 @@ public class Tset {
                 new Thread(new Runnable() {
                     @Override
                     public void run() {
-                        System.out.println(SingletonDemo1.getInstence());
+                        System.out.println(SingletonDemo1.getInstance());
                     }
                 }).start();
         }
@@ -34,7 +34,7 @@ public class Tset {
         Class clazz = SingletonDemo1.class;
         Constructor constructor = clazz.getDeclaredConstructor();
         constructor.setAccessible(true);
-        SingletonDemo1 s1 = SingletonDemo1.getInstence();
+        SingletonDemo1 s1 = SingletonDemo1.getInstance();
         SingletonDemo1 s2 = (SingletonDemo1) constructor.newInstance();
         System.out.println("s1:"+s1);
         System.out.println("s2:"+s2);
