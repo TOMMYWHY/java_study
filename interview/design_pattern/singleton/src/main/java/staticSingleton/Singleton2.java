@@ -1,5 +1,9 @@
 package staticSingleton;
-
+/*
+* best way
+* 当只加载Singleton2类时，SingletonHolder并未被加载。
+* 调用getInstance时，SingletonHolder加载，创建实例。
+* */
 public class Singleton2 {
 
     private static class SingletonHolder{

@@ -21,7 +21,7 @@ public class MyTest {
             new Thread(new Runnable() {
                 @Override
                 public void run() {
-                    System.out.println(Singleton4.getInstance());
+                    System.out.println(Singleton4.getInstance()+ "："+ Singleton4.getInstance().hashCode());
 
                 }
             }).start();
