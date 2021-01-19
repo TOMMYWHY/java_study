@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.tommy.why.dao.DeptDao">
+
+    <select id="queryById"
+            parameterType="long"
+            resultType="com.tommy.why.pojo.Dept">
+
+        select *
+        from dept
+        where deptno=#{id};
+
+    </select>
+    <select id="queryAll" resultType="com.tommy.why.pojo.Dept">
+        select * from dept;
+    </select>
+
+    <insert id="addDept" parameterType="com.tommy.why.pojo.Dept">
+        insert into dept(deptme, db_source) values(#{dname},DATABASE());
+    </insert>
+
+
+</mapper>
