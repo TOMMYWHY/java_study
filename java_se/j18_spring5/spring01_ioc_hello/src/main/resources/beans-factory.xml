@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <bean id="orderService" class="com.tommy.why.factory.StaticFactory" factory-method="createInstance"></bean>
+
+
+    <bean id="instanceFactory" class="com.tommy.why.factory.InstanceFactory"></bean>
+    <bean id="orderService2" factory-bean="instanceFactory" factory-method="createInstance"></bean>
+</beans>
