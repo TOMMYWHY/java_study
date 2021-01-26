@@ -14,19 +14,48 @@ const Router = routerRedux.ConnectedRouter;
 
 const routes = [
   {
-    path: '/HelloWorld',
-    exact: true,
-    component: require('../HelloWorld.js').default,
-  },
-  {
-    path: '/List',
-    exact: true,
-    component: require('../List.js').default,
-  },
-  {
-    path: '/Show',
-    exact: true,
-    component: require('../Show.js').default,
+    path: '/',
+    component: require('../../layout/index.js').default,
+    routes: [
+      {
+        path: '/HelloWorld',
+        exact: true,
+        component: require('../HelloWorld.js').default,
+      },
+      {
+        path: '/List',
+        exact: true,
+        component: require('../List.js').default,
+      },
+      {
+        path: '/MyTabs',
+        exact: true,
+        component: require('../MyTabs.js').default,
+      },
+      {
+        path: '/Show',
+        exact: true,
+        component: require('../Show.js').default,
+      },
+      {
+        path: '/user/UserAdd',
+        exact: true,
+        component: require('../user/UserAdd.js').default,
+      },
+      {
+        path: '/user/UserList',
+        exact: true,
+        component: require('../user/UserList.js').default,
+      },
+      {
+        component: () =>
+          React.createElement(
+            require('/Users/Tommy/Desktop/studyInMassey/Java_study/react/node_modules/umi-build-dev/lib/plugins/404/NotFound.js')
+              .default,
+            { pagesPath: 'src/pages', hasRoutesInConfig: false },
+          ),
+      },
+    ],
   },
   {
     component: () =>
