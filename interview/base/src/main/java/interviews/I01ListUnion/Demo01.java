@@ -1,4 +1,4 @@
-package leetCode;
+package interviews;
 
 import java.util.*;
 
@@ -11,13 +11,36 @@ public class Demo01 {
 
 
     public static class ListUnion {
-        static List<Integer> union(List<Integer> a, List<Integer> b) {
+
+        public static int[] mergeArrays(int[] arr1, int[] arr2) {
+            int[] temp = new int[arr1.length + arr2.length];
+            System.arraycopy(arr1, 0, temp, 0, arr1.length);
+            System.arraycopy(arr2, 0, temp, arr1.length, arr2.length);
+            for (int i = 0; i < arr1.length; i++) {
+                for (int j = arr1.length; j < temp.length; j++) {
+                    if (temp[i] == temp[j]) {
+                        temp[j] = temp[temp.length - 1];
+                        temp = Arrays.copyOf(temp, temp.length - 1);
+                        break;
+                    }
+                }
+            }
+//            Arrays.sort(temp);
+            System.out.println(temp.toString());
+            return temp;
+        }
+
+
+
+            static List<Integer> union(List<Integer> a, List<Integer> b) {
             // 在这儿实现
             /*method 1 */
             Set<Integer> temp = new HashSet<Integer>();
             for(int i :a) temp.add(i);
             for (int j : b ) temp.add(j);
             List<Integer> result = new ArrayList<>(temp);
+
+              
 //            System.out.println("result:"+result);
 
             /*method 2 */
@@ -36,7 +59,8 @@ public class Demo01 {
         }
         public static void main(String[] args) {
             // union([ 2, 1, 3], [ 2, 3, 4]) ==  [1, 2, 3, 4]
-            System.out.println(union(Arrays.asList(2,1,3), Arrays.asList(2,3,4))); // 原题此处少个闭合括号
+//            System.out.println(union(Arrays.asList(2,1,3), Arrays.asList(2,3,4))); // 原题此处少个闭合括号
+//            System.out.println(mergeArrays(new int[]{2,1,3},new int[]{2,3,4} ));
         }
     }
 
