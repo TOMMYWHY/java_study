@@ -1,0 +1,65 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <h1>03 components state.html</h1>
+    <h2>state</h2>
+    <hr>
+    <div id="container">
+
+    </div>
+    
+
+    <script type="text/javascript" src="../js/react.development.js"></script>
+	<script type="text/javascript" src="../js/react-dom.development.js"></script>
+	<script type="text/javascript" src="../js/babel.min.js"></script>
+
+    <script type="text/babel">
+        let that;
+        class Weather extends React.Component{
+            state ={
+                    isHot:true,
+                    wind:"windy"
+                }
+
+            // constructor(props){
+            //     super(props)
+            //     // this.state ={
+            //     //     isHot:true,
+            //     // }
+            //     // this.changeWeather = this.changeWeather.bind(this)
+               
+            // }
+            // a = 1 // 相当于 new 出的实例对象上 添加了changeWeather 方法，而类的prototype上不在拥有 changeWeather
+            //箭头函数 将指向外层 this
+            changeWeather = ()=>{
+                console.log(this);
+                const isHot = this.state.isHot
+                this.setState({
+                    isHot:!isHot
+                })
+                console.log(this.state.isHot);
+            }
+
+            render(){
+                // console.log(this);
+                const {isHot} = this.state
+                return (
+                    <h2 id='title' onClick={this.changeWeather}>tody is {isHot?"hot":"cool"}</h2>
+                )
+            }
+        }
+
+       
+        ReactDOM.render(<Weather/>,document.getElementById("container"))
+        const title = document.getElementById("title")
+        
+    </script>
+</body>
+</html>
