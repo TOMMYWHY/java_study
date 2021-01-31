@@ -1,0 +1,83 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <h1>03 components state.html</h1>
+    <h2>state</h2>
+    <hr>
+    <div id="container">
+
+    </div>
+    
+
+    <script type="text/javascript" src="../js/react.development.js"></script>
+	<script type="text/javascript" src="../js/react-dom.development.js"></script>
+	<script type="text/javascript" src="../js/babel.min.js"></script>
+
+    <script type="text/babel">
+        let that;
+        class Weather extends React.Component{
+
+            constructor(props){
+                super(props)
+                that = this;
+                this.state ={
+                    isHot:true,
+                }
+                this.changeWeather = this.changeWeather.bind(this)
+                /*
+                * changeWeather 是挂载在 类的 prototype 上 new 出来的实例对象调用changeWeather 才可执行。onClick间接调用改变指针这为undefined
+                * bind 将 原型对象prototype上的changeWeather 绑定到 新new 出来的对象上。使得实例对象this上挂载了这一方法。
+                */
+            }
+
+            changeWeather(){
+                console.log("title clicked 222");
+                // console.log(this.state.isHot);
+                // console.log(this); // this是new出来的实例对象
+                const isHot = this.state.isHot
+                // this.state.isHot = ! isHot
+                console.log(this);
+                this.setState({
+                    isHot:!isHot
+                })
+                console.log(this.state.isHot);
+            }
+
+
+            render(){
+                console.log(this);
+                const {isHot} = this.state
+                return (
+                    <h2 id='title' onClick={this.changeWeather}>tody is {isHot?"hot":"cool"}</h2>
+                )
+            }
+        }
+
+       
+        ReactDOM.render(<Weather/>,document.getElementById("container"))
+        const title = document.getElementById("title")
+        // title.addEventListener("click",()=>{
+        //     console.log("title clicked");
+        // })
+
+        // title.onclick = function(){
+        //     console.log("title clicked 1111");
+        // }
+        // function changeWeather(){
+        //     console.log("title clicked 222");
+        //     console.log(that.state.isHot);
+        // }
+
+        // const w = new Weather();
+        // w.changeWeather()
+
+    </script>
+</body>
+</html>

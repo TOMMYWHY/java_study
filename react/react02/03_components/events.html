@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn1">111</button>
+    <button id='btn2'>222</button>
+    <button id="btn3" onclick="clicking()">333</button>
+</body>
+</html>
+
+<script>
+    let btn1 = document.getElementById("btn1");
+    btn1.addEventListener("click",function(){
+        alert("11111");
+    })
+    let btn2 = document.getElementById("btn2");
+    btn2.onclick=function(){
+        alert(222)
+    }
+    function clicking(){
+        alert("3333")
+    }
+
+
+
+</script>

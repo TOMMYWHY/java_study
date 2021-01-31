@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Person{
+            constructor(name,age){
+                this.name=name;
+                this.age=age;
+            }
+            speak(){
+                console.log(`who is ${this.name}, he is ${this.age} ` );
+            }
+        }
+
+
+        class Student extends Person{
+            constructor(name,age,gender){
+                super(name,age)
+                this.gender=gender
+            }
+
+            demo(){}
+        }
+        const s1 = new Student("tommy",16)
+        console.log(s1);
+        console.dir(Person)
+        console.dir(Student)
+
+        // const p1 = new Person("tom",18);
+        // const p2 = new Person("tommywhy",31);
+        // console.log(p1);
+        // console.log(p2);
+        // p1.speak()
+        // p2.speak()
+        // p1.speak.call({a:1,b:2})
+    </script>
+</body>
+</html>

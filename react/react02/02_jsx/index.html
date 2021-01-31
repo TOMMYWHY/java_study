@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .tile{
+            background-color: pink;
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <h1>02 jsx</h1>
+    <hr>
+    <div id="test">
+
+    </div>
+    
+
+    <script type="text/javascript" src="../js/react.development.js"></script>
+	<!-- 引入react-dom，用于支持react操作DOM -->
+	<script type="text/javascript" src="../js/react-dom.development.js"></script>
+	<!-- 引入babel，用于将jsx转为js -->
+	<script type="text/javascript" src="../js/babel.min.js"></script>
+
+    <script type="text/babel">
+        const myId = "Greeting"
+        const myData = "hello tommyjiang"
+        const VDoM = (
+            <div>
+                <h2 className="tile" id={myId.toLowerCase()}>
+                <span style={{color:"white"}}>{myData}</span>
+                </h2>    
+                <input type="text" />
+            </div>
+        )
+        ReactDOM.render(VDoM,document.getElementById("test"))
+
+    </script>
+</body>
+</html>

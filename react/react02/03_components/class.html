@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <h1>03 components index.html</h1>
+    <h2>函数式组件</h2>
+    <hr>
+    <div id="container">
+
+    </div>
+    
+
+    <script type="text/javascript" src="../js/react.development.js"></script>
+	<script type="text/javascript" src="../js/react-dom.development.js"></script>
+	<script type="text/javascript" src="../js/babel.min.js"></script>
+
+    <script type="text/babel">
+        class MyComponent extends React.Component{
+            render(){
+
+                console.log("render this:", this)
+                return (
+                    <h2>xxxooo</h2>
+                )
+            }
+        }
+
+       
+        ReactDOM.render(<MyComponent/>,document.getElementById("container"))
+
+    </script>
+</body>
+</html>
