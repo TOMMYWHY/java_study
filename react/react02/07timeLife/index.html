@@ -19,11 +19,40 @@
 <script type="text/babel">
 
 class Life extends React.Component{
+
+    state={
+        opacity:0.5
+    }
+    destroy = ()=>{
+        // clearInterval(this.timer)
+        ReactDOM.unmountComponentAtNode(document.getElementById("app"))
+    }
+
+    //init
+    componentDidMount(){
+        this.timer = setInterval(()=>{
+            let {opacity } = this.state
+            opacity -= 0.1
+            if(opacity <=0){
+                opacity = 1
+            }
+            this.setState({
+                opacity : opacity 
+            })
+        },200)
+    }
+
+    componentWillUnmount(){
+        clearInterval(this.timer)
+
+    }
+
     render(){
+
         return(
             <div>
-                <h2>too hard to learn react....</h2>
-                <button>go die~!</button>
+                <h2 style={{opacity:this.state.opacity}}>too hard to learn react....</h2>
+                <button onClick={this.destroy}>go die~!</button>
             </div>
         )
     }

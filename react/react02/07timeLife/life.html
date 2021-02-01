@@ -1,0 +1,107 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> life</h1>    
+    <hr>
+    <div id="app"></div>
+</body>
+</html>
+
+<script type="text/javascript" src="../js/react.development.js"></script>
+<script type="text/javascript" src="../js/react-dom.development.js"></script>
+<script type="text/javascript" src="../js/babel.min.js"></script>
+<script src="../js/prop-types.js"></script>
+
+<script type="text/babel">
+
+class Count extends React.Component{
+    constructor(props){
+        super(props)
+        console.log("Count-----constructor");
+
+        this.state={
+        "count":0
+        }
+    }
+
+    componentWillMount(){
+        console.log("Count-----componentWillMount");
+    }
+    componentDidMount(){
+        console.log("Count-----componentDidMount");
+    }
+    shouldComponentUpdate(){
+        console.log("Count----shouldComponentUpdate");
+        // return false
+        return true
+    }
+    componentWillUpdate(){
+        console.log("Count----componentWillUpdate");
+    }
+
+    componentDidUpdate(){
+        console.log("Count----componentDidUpdate");
+    }
+
+
+
+    
+    add=()=>{
+        const {count} = this.state
+        this.setState({
+            "count" : count+1
+        })
+    }
+
+    render(){
+        console.log("Count-----render");
+        const {count} = this.state
+        return(
+            <div>
+                <h2>current sum:  {count}</h2>
+                <button onClick={this.add}> click add</button>
+            </div>
+        )
+    }
+}
+
+class A extends React.Component{
+    state={carName:"benz"}
+    changeCar=()=>{
+        this.setState({
+            carName:"bmw"
+        })
+    }
+    render(){
+        return(
+            <div>
+                <div>A</div>
+                <button onClick={this.changeCar}> change</button>
+
+                <B carName={this.state.carName} />
+            </div>
+            
+        )
+    }
+}
+
+class B extends React.Component{
+    componentWillReceiveProps(){
+        console.log("B----componentWillReceiveProps");
+
+    }
+    render(){
+        return(
+            <div>B, {this.props.carName}</div>
+
+        )
+    }
+}
+
+ReactDOM.render(<A/>, document.getElementById("app"))
+
+</script>
