@@ -5,7 +5,7 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>advance01.html</h1>
+    <h1>advance02.html</h1>
     <hr>
     <div id="app"></div>
 </body>
@@ -24,30 +24,15 @@
             username:'',
             password:''
         }
-        // saveUsername = (event)=>{
-        //     // console.log("!",event.target.value);
-        //     this.setState({
-        //         username:event.target.value
-        //     })
-        // }
-        // savePassword = (event)=>{
-        //     // console.log("!",event.target.value);
-        //     this.setState({
-        //         password:event.target.value
-        //     })
-        // }
+   
 
-        saveFormData =(dataType)=>{
-            // console.log("!",dataType);
-            return (event)=>{
-                console.log(dataType,event.target.value);
-                this.setState({
-                    [dataType]:event.target.value
+        saveFormData =(dataType,value)=>{
+
+            this.setState({
+                    [dataType]:value
                 })
-            }
-                // this.setState({
-                // password:event.target.value
-                // })
+           
+                
         }
 
         handleSubmit= (event)=>{
@@ -60,8 +45,8 @@
         render(){
             return(
                 <form action="" onSubmit={this.handleSubmit}>
-                    username:<input onChange={this.saveFormData("username")} type="text" name="username" />    
-                    password:<input onChange={this.saveFormData("password")} type="password" name="password" />    
+                    username:<input onChange={(event)=>{this.saveFormData("username",event.target.value)}} type="text" name="username" />    
+                    password:<input onChange={(event)=>{this.saveFormData("password",event.target.value)}} type="password" name="password" />    
                     <button >login</button>
                 </form>
             )
