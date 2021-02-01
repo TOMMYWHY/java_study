@@ -1,0 +1,55 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app"></div>    
+    <div id="app1"></div>    
+    <div id="app2"></div>    
+</body>
+</html>
+
+<script type="text/javascript" src="../js/react.development.js"></script>
+<script type="text/javascript" src="../js/react-dom.development.js"></script>
+<script type="text/javascript" src="../js/babel.min.js"></script>
+<script src="../js/prop-types.js"></script>
+<script type="text/babel">
+    class Person extends React.Component{
+
+        constructor(props){
+            super(props)
+            console.log(props);
+        }
+
+        static propTypes={
+            name:PropTypes.string.isRequired,
+            gender:PropTypes.string,
+            age:PropTypes.number,
+        }
+        static defaultProps={
+            gender:"xxoo",
+            age:100
+        }    
+        
+        state = {}
+
+        render(){
+            // console.log(this);
+            const {name,age,gender} = this.props
+            return(
+                <ul>
+                    <li>name:{name}</li>
+                    <li>age:{age+1}</li>
+                    <li>gender:{gender}</li>
+
+                </ul>
+            );
+        }
+    }
+    
+    
+    ReactDOM.render(<Person name ="tommmywhy" age={18} gender="male" />, document.getElementById("app"))
+   
+</script>

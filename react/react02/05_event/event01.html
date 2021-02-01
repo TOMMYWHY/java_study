@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app"></div>
+</body>
+</html>
+
+<script type="text/javascript" src="../js/react.development.js"></script>
+<script type="text/javascript" src="../js/react-dom.development.js"></script>
+<script type="text/javascript" src="../js/babel.min.js"></script>
+<script src="../js/prop-types.js"></script>
+
+<script type="text/babel">
+    class Demo extends React.Component{
+        myRef = React.createRef()
+        showData=()=>{
+            console.log(this.myRef.current.value);
+        }
+        showData2 =(event)=>{
+            alert(event.target.value)
+        }
+
+        render(){
+            return(
+                <div>
+                    <input ref={this.myRef} type="text" />
+                    <button onClick={this.showData}>click me</button>
+
+                    <hr />
+                    <input onBlur={this.showData2} type="text" />
+                </div>
+            )
+        }
+    }
+
+    ReactDOM.render(<Demo/>,document.getElementById("app"))
+</script>

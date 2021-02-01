@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>form02.html</h1>
+    <hr>
+    <div id="app"></div>
+</body>
+</html>
+
+
+<script type="text/javascript" src="../js/react.development.js"></script>
+<script type="text/javascript" src="../js/react-dom.development.js"></script>
+<script type="text/javascript" src="../js/babel.min.js"></script>
+<script src="../js/prop-types.js"></script>
+
+
+<script type="text/babel">
+    class Login extends React.Component{
+
+        handleSubmit= (event)=>{
+            event.preventDefault();
+            const {username,password} = this
+            alert(`welcome user ${username.value} login, password: ${password.value}`)
+        }
+
+        render(){
+            return(
+                <form action="" onSubmit={this.handleSubmit}>
+                    username:<input ref={c=>this.username=c} type="text" name="username" />    
+                    password:<input ref={(c)=>{this.password=c}} type="password" name="password" />    
+                    <button >login</button>
+                </form>
+            )
+        }
+    }
+
+    ReactDOM.render(<Login/> , document.getElementById("app"))
+</script>

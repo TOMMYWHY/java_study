@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app"></div>    
+</body>
+</html>
+
+<script type="text/javascript" src="../js/react.development.js"></script>
+<script type="text/javascript" src="../js/react-dom.development.js"></script>
+<script type="text/javascript" src="../js/babel.min.js"></script>
+<script type="text/babel">
+    class Person extends React.Component{
+
+        // state={name:"tommy",age:18,gender:"male"}
+        
+        render(){
+            console.log(this);
+            const {name,age,gender} = this.props
+            return(
+                <ul>
+                    <li>name:{name}</li>
+                    <li>age:{age+1}</li>
+                    <li>gender:{gender}</li>
+
+                </ul>
+            );
+        }
+        
+    }
+    const p = {name:"tommy111",age:18,gender:"male"}
+    // console.log("aaa",...p);//空
+    ReactDOM.render(<Person name ="tommmywhy" age={18} gender="male" />, document.getElementById("app"))
+    // ReactDOM.render(<Person {...p} />, document.getElementById("app"))
+</script>
