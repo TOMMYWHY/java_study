@@ -28,9 +28,9 @@ class Count extends React.Component{
         }
     }
 
-    componentWillMount(){
-        console.log("Count-----componentWillMount");
-    }
+    // componentWillMount(){
+    //     console.log("Count-----componentWillMount");
+    // }
     componentDidMount(){
         console.log("Count-----componentDidMount");
     }
@@ -39,12 +39,17 @@ class Count extends React.Component{
         // return false
         return true
     }
-    componentWillUpdate(){
-        console.log("Count----componentWillUpdate");
+    // componentWillUpdate(){
+    //     console.log("Count----componentWillUpdate");
+    // }
+
+    componentDidUpdate(prePops,preState,snapshotValue){
+        console.log("Count----componentDidUpdate",prePops,preState,snapshotValue);
     }
 
-    componentDidUpdate(){
-        console.log("Count----componentDidUpdate");
+    getSnapshotBeforeUpdate(){
+        console.log("Count----getSnapshotBeforeUpdate");
+        return "tommy"
     }
 
 
@@ -102,6 +107,7 @@ class B extends React.Component{
     }
 }
 
-ReactDOM.render(<A/>, document.getElementById("app"))
+// ReactDOM.render(<A/>, document.getElementById("app"))
+ReactDOM.render(<Count/>, document.getElementById("app"))
 
 </script>
