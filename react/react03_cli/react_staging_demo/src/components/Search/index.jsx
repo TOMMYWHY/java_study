@@ -1,29 +1,37 @@
 import React, { Component } from 'react'
 import axios from 'axios'
+import PubSub from 'pubsub-js'
+
 
 export default class Search extends Component {
 
+
+
     search=(event)=>{
-        // console.log(this.keyWordElement.value);
+
         const{keyWordElement:{value:keywords}} = this;
-        this.props.updateAppState({isFirst:false,isLoading:true})
-        
+        // this.props.updateAppState({isFirst:false,isLoading:true})
+        PubSub.publish("pub-sub",{isFirst:false,isLoading:true})
+
 
 
         console.log(keywords);
         axios.get(`https://api.github.com/search/users?q=${keywords}`).then(
             (resp)=>{
                 console.log(resp.data);
-                // this.props.saveUsers(resp.data.items)
-                this.props.updateAppState({isLoading:false,users:resp.data.items})
+                // this.props.updateAppState({isLoading:false,users:resp.data.items})
+                PubSub.publish("pub-sub",{isLoading:false,users:resp.data.items})
 
             },
             (err)=>{
                 console.log(err);
-                this.props.updateAppState({isLoading:false,err:err.message})
+                // this.props.updateAppState({isLoading:false,err:err.message})
+                PubSub.publish("pub-sub",{isLoading:false,err:err.message})
+
 
             }
         )
+
     }
 
     render() {
