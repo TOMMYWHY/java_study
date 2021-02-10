@@ -25,13 +25,25 @@ public class SelectionSort {
 
         for (int i = 0; i < arr.length-1; i++) {
             int min=i;
-            for (int j = i; j < arr.length; j++) {
+            for (int j = i+1; j < arr.length; j++) {
                 if(arr[min]>arr[j]){
                     min = j;
                 }
             }
             swap(arr, i, min);
 
+        }
+    }
+
+    public  void selectSort01(int[] arr){
+        for (int i = 0; i < arr.length-1; i++) {
+            int min  = i;
+            for (int j = i+1; j < arr.length; j++) {
+                if(arr[min]>arr[j]){
+                    min = j;
+                }
+            }
+            swap(arr,min,i);
         }
     }
 

@@ -43,10 +43,27 @@ public class BinarySearch {
         }
         return index;
     }
+    public static int nearestIndex00(int arr[], int num){
+        int lo=0,hi=arr.length-1,mid=-1;
+        while(lo <= hi){
+            mid= (lo+hi)/2;
+            if(arr[mid]<num){
+                lo = mid+1;
+            }else if(arr[mid]>num){
+                hi = mid -1;
+            }else {
+                return mid;
+            }
+        }
+
+        return lo;
+    }
+
     @Test
     public void test(){
         int arr[] = {11, 22, 33, 44, 66, 77,99};
-        System.out.println( nearestIndex(arr,55));
+//        System.out.println( nearestIndex(arr,55));
+        System.out.println( nearestIndex00(arr,55));
 //        System.out.println(111);
     }
 
