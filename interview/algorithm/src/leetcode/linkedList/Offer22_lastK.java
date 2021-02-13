@@ -29,7 +29,9 @@ public class Offer22_lastK {
 
       return tmp;
   }
-  /*遍历一次*/
+  /*遍历一次
+  * 双指针，步长为k-1
+  * */
     public ListNode getKthFromEnd1(ListNode head, int k){
 
         ListNode slow = head;

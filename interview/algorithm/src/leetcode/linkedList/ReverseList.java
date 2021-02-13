@@ -33,6 +33,20 @@ public class ReverseList {
         return pre;
     }
 
+    public static Node reverseLinkedList00(Node head){
+        Node pre = null;
+        Node next = null;
+        while (head != null){
+            next = head.next;
+            head.next = pre;
+            pre= head;
+            head = next;
+
+        }
+
+        return pre;
+    }
+
 
     public static DoubleNode reverseDoubleLinkedList(DoubleNode head){
         DoubleNode pre = null;
@@ -56,7 +70,8 @@ public class ReverseList {
         a.next.next = new Node(3);
 
 
-        a = reverseLinkedList(a);
+//        a = reverseLinkedList(a);
+        a = reverseLinkedList00(a);
         System.out.println();
     }
 }

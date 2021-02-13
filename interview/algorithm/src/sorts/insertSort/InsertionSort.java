@@ -11,6 +11,25 @@ public class InsertionSort {
         arr[i] = arr[minIndex];
         arr[minIndex] = tmp;
     }
+
+    /*
+    * 希尔排序 不稳定*/
+    public void shellSort(int arr[]){
+
+        for (int gap = 4; gap >0; gap/=2) {
+            for (int i = gap; i < arr.length; i++) {
+                for (int j = i; j >gap-1; j=j-gap) {
+                    if(arr[j-gap] > arr[j]){
+                        swap(arr,j,j-gap);
+                    }
+                }
+            }
+        }
+
+
+
+    }
+
     public static void InsertionSort(int[] arr) {
 
         for (int i = 0; i < arr.length; i++) { // int i = 1
@@ -21,7 +40,6 @@ public class InsertionSort {
             }
         }
     }
-
     public void insertSort(int arr[]){
         for (int i = 0; i < arr.length; i++) {
             for (int j = i-1; j >= 0; j--) {
@@ -32,11 +50,37 @@ public class InsertionSort {
 
         }
     }
-
     public void insertSort01(int arr[]){
         for (int i = 1; i < arr.length; i++) {
             for (int j = i; j >0 ; j--) {
                 if(arr[j]<arr[j-1]){
+                    swap(arr,j,j-1);
+                }
+            }
+        }
+    }
+    public void insertSort02(int arr[]){
+        for (int i = 1; i < arr.length; i++) {
+            for (int j = i; j >0 ; j--) {
+                if(arr[j]> arr[j-1]){
+                    swap(arr, arr[j],arr[j- 1]);
+                };
+            }
+        }
+    }
+    public void insertSort03(int arr[]){
+        for (int i = 1; i < arr.length; i++) {
+            for (int j = i; j >0; j--) {
+                if(arr[j-1] > arr[j]){
+                    swap(arr,j,j-1);
+                }
+            }
+        }
+    }
+    public void insertSort04(int arr[]){
+        for (int i = 1; i < arr.length; i++) {
+            for (int j = i; j >0; j--) {
+                if(arr[j]>arr[j-1]){
                     swap(arr,j,j-1);
                 }
             }
@@ -48,7 +92,9 @@ public class InsertionSort {
 //        InsertionSort insertionSort = new InsertionSort();
         int [] a = {3,2,4,7,6,11};
 //        InsertionSort(a);
-        insertSort01(a);
+//        insertSort01(a);
+//        insertSort02(a);
+        shellSort(a);
         System.out.println(Arrays.toString(a));
     }
 }

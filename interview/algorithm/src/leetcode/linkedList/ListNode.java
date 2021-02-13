@@ -25,6 +25,17 @@ public class ListNode {
         return  root;
     }
 
+    public static ListNode arrayToListNode00(String [] arr){
+        ListNode root = new ListNode(arr[0]);
+        ListNode pre = root;//指针
+        for (int i = 1; i < arr.length; i++) {
+            ListNode node = new ListNode(arr[i]);
+            pre.next = node;
+            pre = node;
+        }
+        return root;
+    }
+
     public static void main(String[] args) {
         String arr[] = {"a","b","c","d"};
         ListNode listNode = ListNode.arrayToListNode(arr);

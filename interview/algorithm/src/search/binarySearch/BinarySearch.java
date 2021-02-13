@@ -17,14 +17,14 @@ public class BinarySearch {
                 lo = mid +1;
             }
         }
-//        if(arr[hi]==num){
-//
-//            return hi;
-//        }else{
-//            return  -1;
-//        }
-//        System.out.println(arr[hi]);
+        if(arr[hi]==num){
+
             return hi;
+        }else{
+            return  -1;
+        }
+//        System.out.println(arr[hi]);
+//            return hi;
 
 
     }
@@ -58,13 +58,31 @@ public class BinarySearch {
 
         return lo;
     }
+    public static int nearestIndex01(int arr[], int num){
+        int l=0,h= arr.length-1;
+        int mid = -1;
+        while(l<=h){
+            mid = (l+h)/2;
+            if(arr[mid] == num){
+                return mid;
+            }else if(arr[mid]>num){
+                h = mid-1;
+            }else {
+                l = mid + 1;
+            }
+        }
+
+
+        return l;
+    }
 
     @Test
     public void test(){
         int arr[] = {11, 22, 33, 44, 66, 77,99};
 //        System.out.println( nearestIndex(arr,55));
-        System.out.println( nearestIndex00(arr,55));
+//        System.out.println( nearestIndex00(arr,55));
 //        System.out.println(111);
+        System.out.println(exit(arr,36));
     }
 
 }

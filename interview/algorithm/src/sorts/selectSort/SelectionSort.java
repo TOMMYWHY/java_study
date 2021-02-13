@@ -1,5 +1,9 @@
 package sorts.selectSort;
 
+import org.junit.Test;
+
+import java.util.Arrays;
+
 public class SelectionSort {
 
     public static void selectionSort(int[] arr){
@@ -15,9 +19,7 @@ public class SelectionSort {
                     minIndex = j;
                 }
             }
-
             swap(arr,i,minIndex);
-
         }
     }
 
@@ -34,7 +36,6 @@ public class SelectionSort {
 
         }
     }
-
     public  void selectSort01(int[] arr){
         for (int i = 0; i < arr.length-1; i++) {
             int min  = i;
@@ -46,6 +47,53 @@ public class SelectionSort {
             swap(arr,min,i);
         }
     }
+    public  void selectSort02(int[] arr){
+        for (int i = 0; i < arr.length-1; i++) {
+            int min = i;
+            for (int j = i+1; j <arr.length ; j++) {
+                if(arr[min] > arr[j]){
+                    min = j;
+                }
+            }
+            swap(arr,min,i);
+
+        }
+    }
+    public  void selectSort03(int[] arr){
+        for (int i = 0; i < arr.length; i++) {
+            int min = i;
+            for (int j = i+1; j < arr.length; j++) {
+                if(arr[min]>arr[j]){
+                    min = j;
+                }
+            }
+            swap(arr,min,i);
+        }
+    }
+    public  void selectSort04(int[] arr){
+
+        for (int i = 0; i < arr.length-1; i++) { // -1
+            int min = i;
+            for (int j = i+1; j < arr.length; j++) {
+                if(arr[min]>arr[j]){
+                    min = j;
+                }
+            }
+            swap(arr,i,min);
+        }
+    }
+    public  void selectSort05(int[] arr){
+        for (int i = 0; i < arr.length-1; i++) {
+            int min = i;
+            for (int j = i+1; j < arr.length; j++) {
+                if(arr[min]>arr[j]){
+                    min = j;
+                }
+            }
+            swap(arr,i,min);
+        }
+    }
+
 
     private static void swap(int[] arr, int i, int minIndex) {
         int tmp = arr[i];
@@ -53,6 +101,13 @@ public class SelectionSort {
         arr[minIndex] = tmp;
     }
 
+
+    @Test
+    public void test(){
+        int arr[] = {3,2,1,4,5,17,8};
+        selectSort04(arr);
+        System.out.println(Arrays.toString(arr));
+    }
 
 
 }

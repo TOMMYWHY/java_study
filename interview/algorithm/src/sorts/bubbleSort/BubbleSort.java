@@ -43,6 +43,44 @@ public class BubbleSort {
 
         }
     }
+    public void bubbleSort02(int[] arr){
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < arr.length-i -1; j++) {
+                if(arr[j] > arr[j+1]){
+                    swap(arr, arr[j],arr[j+1]);
+                }
+            }
+        }
+    }
+    public void bubbleSort03(int[] arr){
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < arr.length-i-1; j++) {
+                if(arr[j]>arr[j+1]){
+                    swap(arr,j,j+1);
+                }
+
+            }
+
+        }
+    }
+    public void bubbleSort04(int[] arr){
+        for (int i = arr.length-1; i > 0; i--){
+            for (int j = 0; j < i; j++) {
+                if(arr[j]>arr[j+1]){
+                    swap(arr, j ,j+1);
+                }
+            }
+        }
+    }
+    public void bubbleSort05(int[] arr){
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < arr.length-i-1; j++) {
+                if(arr[j]>arr[j+1]){
+                    swap(arr, j ,j+1);
+                }
+            }
+        }
+    }
 
 
 
