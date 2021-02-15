@@ -32,9 +32,16 @@ public class QuickSort2 {
         int more = r;
         while(l<more){
             if(arr[l]<arr[r]){
-                swap(arr,++less,l++);
+//                swap(arr,++less,l++);
+                swap(arr,l, less+1);
+                less++;
+                l++;
+
             }else if(arr[l]>arr[r]){
-                swap(arr,--more,l);
+//                swap(arr,--more,l);
+                swap(arr, more-1,l);
+                more--;
+
             }else{
                 l++;
             }
