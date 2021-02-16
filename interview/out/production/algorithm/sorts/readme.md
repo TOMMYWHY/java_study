@@ -14,30 +14,22 @@
 > 空间复杂度O(N) 时间复杂度O(NlgN)
 > 额外空间储存merge结果
 ## 5. quick Sort
->分治
+>分治 不稳定
 > 左右同时搜索与中轴 大或小，然后交换。 中轴值在边界则最差O(N2), 中轴随机O(N*lgN)
 >[i]<num, [i] 与 less区的下一个交换，less区右扩，i++
 >[i]>num, [i] 与 more区前一个交换，more区左扩，i原地
 >[i]=num,i++
 ##6. heap Sort 桶排序
-> 完全二叉树； 分大根堆(大顶堆)，小根堆 
+> 完全二叉树； 分大根堆(大顶堆)，小根堆 不稳定 
 > 空间复杂度O(1) 时间复杂度O(NlgN)
 > 
+不稳定：选择，快排，堆排
+稳定：冒泡，插入，归并，桶排
+> https://www.bilibili.com/video/BV16K4y157vm?p=4&t=2082
+> P4 sort 总结
 # search
 ## 1. binary search
 > O(logN)
 > 中间值 左右两侧判断
 > 不一定有序
 
-# structure
-## LinkList
-### LinkList to array
-> 指针移动
-### reverse list 翻转
-> pre->head->next // 记下next; head->pre; pre前移; head 前移  
-> 双链表 reverse
-> 
-> 
-# tree
-## 二叉树
-> 左子树: 2*i+1; 右子树: 2*i+2; 父子书: (i-1)/2
