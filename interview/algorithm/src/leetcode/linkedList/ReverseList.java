@@ -41,10 +41,20 @@ public class ReverseList {
             head.next = pre;
             pre= head;
             head = next;
-
         }
-
         return pre;
+    }
+
+    public static Node reverseLinkedList01(Node head){
+        Node pre = null;
+        Node next = null;
+        while (head!=null){
+            next = head.next; //记住下一个节点位置
+            head.next = pre; // 翻转， 开始指向null
+            pre = head; //前移
+            head = next;//前移
+        }
+        return  pre;
     }
 
 
@@ -57,10 +67,20 @@ public class ReverseList {
             head.last = next;
             pre = head;
             head= next;
-
-
         }
+        return pre;
+    }
 
+    public static DoubleNode reverseDoubleLinkedList00(DoubleNode head){
+        DoubleNode pre = null;
+        DoubleNode next= null;
+        while(head!=null){
+            next = head.next;
+            head.next = pre;
+            head.last = next;
+            pre = head;
+            head = next;
+        }
         return pre;
     }
 
