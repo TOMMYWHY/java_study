@@ -19,7 +19,7 @@
 >[i]<num, [i] 与 less区的下一个交换，less区右扩，i++
 >[i]>num, [i] 与 more区前一个交换，more区左扩，i原地
 >[i]=num,i++
-##6. heap Sort 桶排序
+##6. heap Sort 桶排序(need review)
 > 完全二叉树； 分大根堆(大顶堆)，小根堆 不稳定 
 > 空间复杂度O(1) 时间复杂度O(NlgN)
 > 

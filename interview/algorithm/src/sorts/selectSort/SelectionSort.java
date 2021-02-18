@@ -127,6 +127,26 @@ public class SelectionSort {
             swap(arr,i,min);
         }
     }
+    public  void selectSort09(int[] arr){
+        for (int i = 0; i < arr.length-1; i++) {
+            int min = i;
+            for (int j = i+1; j < arr.length; j++) {
+                if(arr[min]>arr[j]){
+                    min = j;
+                }
+            }
+            swap(arr,i,min);
+        }
+    }
+    public  void selectSort10(int[] arr){
+        for (int i = 0; i < arr.length-1; i++) {
+            int min = i;
+            for (int j = i+1; j < arr.length; j++) {
+                min = j;
+            }
+            swap(arr,i,min);
+        }
+    }
 
     private static void swap(int[] arr, int i, int minIndex) {
         int tmp = arr[i];
@@ -138,7 +158,7 @@ public class SelectionSort {
     @Test
     public void test(){
         int arr[] = {3,2,1,4,5,17,8};
-        selectSort08(arr);
+        selectSort10(arr);
         System.out.println(Arrays.toString(arr));
     }
 

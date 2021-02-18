@@ -120,6 +120,17 @@ public class InsertionSort {
 
         }
     }
+    public void insertSort08(int [] arr){
+        for (int i = 1; i < arr.length; i++) {
+            for (int j = i; j >0; j--) {
+                if(arr[j-1]>arr[j]){
+                    swap(arr,j-1,j);
+                }
+
+            }
+
+        }
+    }
 
     @Test
     public void test(){
@@ -127,7 +138,7 @@ public class InsertionSort {
         int [] a = {3,2,4,7,6,11};
 //        InsertionSort(a);
 //        insertSort01(a);
-        insertSort07(a);
+        insertSort08(a);
 //        shellSort(a);
         System.out.println(Arrays.toString(a));
     }

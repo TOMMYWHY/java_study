@@ -57,6 +57,7 @@ public class HeapSort00 {
             }
             if(largest == index){break;} // 父节点最大，完成
             swap(arr,largest,index);
+            /*重置*/
             index = largest;
             left_son = index * 2 +1;
 //            right_son = index * 2 +2;
