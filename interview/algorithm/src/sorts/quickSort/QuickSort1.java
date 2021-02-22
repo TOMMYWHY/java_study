@@ -26,6 +26,7 @@ public class QuickSort1 {
         }
     }
 
+
     private static int[] partition(int[] arr, int l, int r) {
         int less = l-1; // less 为小于区域
         int more = r;

@@ -34,7 +34,7 @@ public class PrintCommonPart {
 
         printLinkedList(node1);
         printLinkedList(node2);
-        printCommonPart00(node1, node2);
+        printCommonPart01(node1, node2);
 
     }
 
@@ -53,7 +53,6 @@ public class PrintCommonPart {
             }
         }
     }
-
     public static void printCommonPart00(Node head1, Node head2){
 //        Node h1 = null,h2=null;
         System.out.print("Common Part: ");
@@ -67,6 +66,19 @@ public class PrintCommonPart {
                 System.out.print(head1.value+"; ");
                 head1 = head1.next;
                 head2 = head2.next;
+            }
+        }
+    }
+    public static void printCommonPart01(Node head1,Node head2){
+        while(head1!=null && head2!=null){
+            if (head1.value< head2.value){
+                head1= head1.next;
+            }else if(head1.value> head2.value){
+                head2=head2.next;
+            }else{
+                System.out.print(head1.value+"; ");
+                head1= head1.next;
+                head2=head2.next;
             }
         }
     }
