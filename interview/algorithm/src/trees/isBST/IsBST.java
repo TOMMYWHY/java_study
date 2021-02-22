@@ -77,4 +77,49 @@ public class IsBST {
         }
         return true;
     }
+
+    /*m4 递归*/
+    public static class ReturnData{
+        public boolean isBst;
+        public int min;
+        public int max;
+
+        public ReturnData(boolean isBst, int min, int max) {
+            this.isBst = isBst;
+            this.min = min;
+            this.max = max;
+        }
+    }
+//    public static boolean is_searchTree4(Node head){
+//
+//    }
+    public static ReturnData process(Node x){
+        if(x==null){
+            return null;
+        }
+        ReturnData leftData = process(x.left);
+        ReturnData rightData = process(x.right);
+        int min = x.value;
+        int max = x.value;
+        if(leftData!=null){
+            min = Math.min(min,leftData.min);
+            max = Math.max(max,leftData.min);
+        }
+        if(rightData!=null){
+            min = Math.min(min,rightData.min);
+            max = Math.max(max,rightData.min);
+        }
+
+        boolean isBst=true;
+        if(leftData!=null &&
+                (!leftData.isBst || leftData.max>=x.value) //左树最大值不能高于value
+        ){
+            isBst = false;
+        }
+        if(rightData!=null && (!rightData.isBst|| rightData.min<=x.value )){
+            isBst = false;
+        }
+
+        return new ReturnData(isBst,min,max);
+    }
 }
