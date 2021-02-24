@@ -77,6 +77,16 @@ public class ReverseList {
         }
         return pre;
     }
+    public static Node reverseLinkedList04(Node head){
+        Node next=null,pre = null;
+        while (head!=null){
+            next = head.next;
+            head.next = pre;
+            pre = head;
+            head = next;
+        }
+        return pre;
+    }
 
     public static DoubleNode reverseDoubleLinkedList(DoubleNode head){
         DoubleNode pre = null;
@@ -125,6 +135,18 @@ public class ReverseList {
         }
         return pre;
     }
+    public static DoubleNode reverseDoubleLinkedList03(DoubleNode head){
+        DoubleNode next = null, pre=null;
+        while (head!=null){
+             next = head.next;
+             head.next = pre;
+             head.last = next;
+             pre = head;
+             head = next;
+        }
+        return pre;
+    }
+
 
     public static void main(String[] args) {
         Node a = new Node(1);

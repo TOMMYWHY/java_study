@@ -137,11 +137,18 @@ public class BubbleSort {
 
         }
     }
+    public void bubbleSort12(int [] arr){
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 1; j < arr.length-i; j++) {
+                if(arr[j-1]>arr[j]){swap(arr,j-1,j);}
+            }
+        }
+    }
 
     @Test
     public void test(){
         int [] a = {3,2,4,7,6,1};
-        bubbleSort11(a);
+        bubbleSort12(a);
         System.out.println(Arrays.toString(a));
     }
 
