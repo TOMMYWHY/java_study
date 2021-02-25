@@ -76,7 +76,7 @@ class MetaJavaQuestionSheet {
 
         D. 1 2 3 4 5 6 7
     */
-    public static String qn2 = null;
+    public static String qn2 = "B";
 
 
 
@@ -171,7 +171,7 @@ class MetaJavaQuestionSheet {
 
         D. 45
     */
-    public static String qn7 = "B";
+    public static String qn7 = "A";
 
 
 
@@ -519,7 +519,7 @@ class MetaJavaQuestionSheet {
      * @param TreeNode 一颗二叉树
      * @return boolean 是否是对称的
      */
-
+        /* 左树的左 == 右树的右         */
     // 以下给出TreeNode类, 请勿修改
     static class TreeNode {
         int val;

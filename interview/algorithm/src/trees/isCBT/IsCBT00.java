@@ -1,9 +1,10 @@
 package trees.isCBT;
 
 import java.util.LinkedList;
+import java.util.Queue;
 
 /*completed binary tree*/
-public class IsCBT {
+public class IsCBT00 {
     public static class Node {
         public int value;
         public Node left;
@@ -16,28 +17,22 @@ public class IsCBT {
 
     public static boolean isCBT(Node head) {
         if(head==null){return true;}
-        LinkedList<Node> queue = new LinkedList<>();
-        boolean leaf = false;
-        Node l = null;
-        Node r = null;
+        Queue<Node> queue = new LinkedList<>();
+        boolean leafs_not_full = false;
+        Node l=null, r= null;
         queue.add(head);
-        while(!queue.isEmpty()){
-            head = queue.poll();
-            l = head.left;
-            r = head.right;
-            if( (leaf&&(l!=null||r!=null)) || (l==null&&r!=null) ){
-                return false;
-//                > 1.任一节点，有右无左，false
-//                > 2. (1)满足， 第一个左右不全，后面所有节点必须是叶子节点，否则false
-            }
-            if(l!=null){
-                queue.add(l);
-            }
-            if(r!=null){
-                queue.add(r);
-            }
+        while (!queue.isEmpty()){
+            Node cur = queue.poll();
+            l = cur.left;
+            r=cur.right;
+            if(r!=null && l==null){return false;}
+            if(leafs_not_full && (l!=null||r!=null)){return false;}
+
+
+            if(l!=null){queue.add(l);}
+            if(r!=null){queue.add(r);}
             if(l==null || r==null){
-                leaf = true;
+                leafs_not_full = true;
             }
         }
         return true;
@@ -45,7 +40,7 @@ public class IsCBT {
 
     /*m2*/
 
-    public static boolean isFullBT(Node head){
+    public static boolean isCBT2(Node head){
         if(head==null){
             return true;
         }
