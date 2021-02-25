@@ -27,6 +27,7 @@ public class SuccessorNode {
         }
     }
 
+    //最左节点
     public static Node getLeftMost(Node node) {
         if (node == null) {
             return node;

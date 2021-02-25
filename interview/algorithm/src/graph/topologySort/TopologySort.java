@@ -10,7 +10,9 @@ import java.util.List;
 
 public class TopologySort {
     public static List<Node> sortedTopology(Graph graph) {
+        /*key：node value:剩余入度*/
         HashMap<Node, Integer> inMap = new HashMap<>();
+        /*入渡为0 可进入queue*/
         LinkedList<Node> zeroInQueue = new LinkedList<>();
         for (Node node : graph.nodes.values()) {
             inMap.put(node,node.in);
