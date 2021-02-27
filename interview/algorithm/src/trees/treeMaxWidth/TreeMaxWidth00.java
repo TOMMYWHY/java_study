@@ -52,8 +52,12 @@ public class TreeMaxWidth00 {
                 curLevelNodes = 1;
             }
             System.out.print(cur.value+" ");
-            if(cur.left!=null){queue.add(cur.left);}
-            if(cur.right!=null){queue.add(cur.right);}
+            if(cur.left!=null){
+                levelMap.put(cur.left,curLevel+1);
+                queue.add(cur.left);}
+            if(cur.right!=null){
+                levelMap.put(cur.right,curLevel+1);
+                queue.add(cur.right);}
 
         }
     }

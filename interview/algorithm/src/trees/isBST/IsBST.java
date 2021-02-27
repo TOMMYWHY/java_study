@@ -29,7 +29,7 @@ public class IsBST {
             preValue =  head.value;
         }
         boolean is_rightBst = is_searchTree(head.right);
-        return is_leftBst;
+        return is_rightBst;
     }
 
 
