@@ -43,7 +43,7 @@ public class IsCBT {
         return true;
     }
 
-    /*m2*/
+
 
     public static boolean isFullBT(Node head){
         if(head==null){
