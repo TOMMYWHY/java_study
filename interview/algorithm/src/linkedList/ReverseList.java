@@ -1,4 +1,4 @@
-package structures.linkedList;
+package linkedList;
 
 public class ReverseList {
     /*内部类*/
@@ -87,6 +87,17 @@ public class ReverseList {
         }
         return pre;
     }
+    public static Node reverseLinkedList05(Node head){
+        Node next= null, pre=null;
+//        Node cur  =head;
+        while (head!=null){
+            next = head.next;
+            head.next= pre;
+            pre = head;
+            head =next;
+        }
+        return pre;
+    }
 
     public static DoubleNode reverseDoubleLinkedList(DoubleNode head){
         DoubleNode pre = null;
@@ -146,6 +157,7 @@ public class ReverseList {
         }
         return pre;
     }
+
 
 
     public static void main(String[] args) {

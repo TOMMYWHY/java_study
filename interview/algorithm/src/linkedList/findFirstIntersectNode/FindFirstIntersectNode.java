@@ -1,4 +1,4 @@
-package structures.linkedList.findFirstIntersectNode;
+package linkedList.findFirstIntersectNode;
 
 public class FindFirstIntersectNode {
     public static class Node {

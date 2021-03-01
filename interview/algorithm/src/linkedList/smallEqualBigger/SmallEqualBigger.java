@@ -1,4 +1,4 @@
-package structures.linkedList.smallEqualBigger;
+package linkedList.smallEqualBigger;
 
 public class SmallEqualBigger {
     private class  Node{

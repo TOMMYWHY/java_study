@@ -1,6 +1,4 @@
-package structures.linkedList;
-
-import leetcode.linkedList.ReverseList;
+package linkedList;
 
 public class SingleLinkedList {
     public static void main(String[] args) {

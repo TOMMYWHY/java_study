@@ -1,4 +1,4 @@
-package structures.linkedList.copyListWithRandom;
+package linkedList.copyListWithRandom;
 
 import java.util.HashMap;
 

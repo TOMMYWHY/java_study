@@ -1,4 +1,4 @@
-package structures.linkedList;
+package linkedList;
 
 public class PrintCommonPart {
 

@@ -1,4 +1,4 @@
-package structures.linkedList.isPalindromeList;
+package linkedList.isPalindromeList;
 
 import java.util.Stack;
 
