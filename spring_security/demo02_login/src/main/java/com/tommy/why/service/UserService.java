@@ -21,7 +21,8 @@ public class UserService {
 
     @Resource
     private  UserMapper userMapper;
-
+    @Resource
+    private  MailService mailService;
     @Transactional
     public Map<String,Object> createAccount(User user){
         String confirmCode = IdUtil.getSnowflake(1,1).nextIdStr();
@@ -36,7 +37,8 @@ public class UserService {
         int result = userMapper.insertUser(user);
         Map<String,Object> resultMap = new HashMap<>();
         if(result>0){
-            //todo send email
+            String activationUrl = "http://localhost:8080/user/activation?confirmCode="+confirmCode;
+            mailService.sendMailForActivationAccount(activationUrl, user.getEmail());
             resultMap.put("code",200);
             resultMap.put("msg","register success~!");
         }else{
@@ -52,7 +54,7 @@ public class UserService {
         List<User> userList = userMapper.selectUserByEmail(user.getEmail());
         if(userList==null || userList.isEmpty()){
             resultMap.put("code",400);
-            resultMap.put("msg","account not exist or unvalid~！");
+            resultMap.put("msg","account not exist or invalidate~！");
             return  resultMap;
         }
         // step 2 duplicate emails return err
@@ -73,5 +75,26 @@ public class UserService {
         resultMap.put("code",200);
         resultMap.put("msg","login successful~！");
         return  resultMap;
+    }
+
+    public Map<String, Object> activationAccount(String confirmCode) {
+        Map<String,Object> resultMap = new HashMap<>();
+        User user = userMapper.selectUserByConfirmCode(confirmCode);
+        boolean after  = LocalDateTime.now().isAfter(user.getActivationTime());
+        if(after){
+            resultMap.put("code",400);
+            resultMap.put("msg","Link invalidate");
+            return resultMap;
+        }
+
+        int result = userMapper.updateUserByConfirmCode(confirmCode);
+        if (result>0){
+            resultMap.put("code",200);
+            resultMap.put("msg","account activated~！");
+        }else {
+            resultMap.put("code",400);
+            resultMap.put("msg","activate fail");
+        }
+        return resultMap;
     }
 }

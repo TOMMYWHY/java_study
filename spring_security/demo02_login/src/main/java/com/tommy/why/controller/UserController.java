@@ -27,4 +27,9 @@ public class UserController {
     public Map<String,Object> loginAccount (User user){
         return   userService.loginAccount(user);
     }
+
+    @GetMapping ("activation")
+    public Map<String,Object> activateAccount (String confirmCode){
+        return  userService.activationAccount(confirmCode) ;
+    }
 }
