@@ -93,21 +93,21 @@
                 Log-in to your account
             </div>
         </h2>
-        <form class="ui large form">
+        <form class="ui large form" onsubmit="return false;">
             <div class="ui stacked segment">
                 <div class="field">
                     <div class="ui left icon input">
                         <i class="user icon"></i>
-                        <input type="text" name="email" placeholder="E-mail address">
+                        <input type="text" name="email" id="email" placeholder="E-mail address">
                     </div>
                 </div>
                 <div class="field">
                     <div class="ui left icon input">
                         <i class="lock icon"></i>
-                        <input type="password" name="password" placeholder="Password">
+                        <input type="password" name="password" id="password" placeholder="Password">
                     </div>
                 </div>
-                <div class="ui fluid large teal submit button">Login</div>
+                <div class="ui fluid large teal submit button" id="login">Login</div>
             </div>
 
             <div class="ui error message"></div>
@@ -121,5 +121,26 @@
 </div>
 
 </body>
+
+<script>
+    $("#login").on("click",function (){
+        $.ajax({
+            url: "/user/login",
+            type:"POST",
+            data:{
+                email:$("#email").val(),
+                password: $("#password").val(),
+            },
+            resultType:"JSON",
+            success:function (result){
+                alert(result.msg);
+                if(result.code==200){
+                    // window.location.href ="http://localhost:8080/login"
+                }
+            },
+            error:function (){}
+        })
+    })
+</script>
 
 </html>

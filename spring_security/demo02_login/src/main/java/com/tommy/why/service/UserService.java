@@ -13,6 +13,7 @@ import org.springframework.transaction.annotation.Transactional;
 import javax.annotation.Resource;
 import java.time.LocalDateTime;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 @Service
@@ -43,5 +44,34 @@ public class UserService {
             resultMap.put("msg","register fail~!");
         }
         return resultMap;
+    }
+
+    public Map<String,Object> loginAccount(User user){
+        Map<String,Object> resultMap = new HashMap<>();
+        // step 1 check email
+        List<User> userList = userMapper.selectUserByEmail(user.getEmail());
+        if(userList==null || userList.isEmpty()){
+            resultMap.put("code",400);
+            resultMap.put("msg","account not exist or unvalid~！");
+            return  resultMap;
+        }
+        // step 2 duplicate emails return err
+        if(userList.size()>1){
+            resultMap.put("code",400);
+            resultMap.put("msg","account has issue~！");
+            return  resultMap;
+        }
+        // step 3 check password
+        User u = userList.get(0);
+        String md5Pwd = SecureUtil.md5(user.getPassword() + u.getSalt());
+        if(!u.getPassword().equals(md5Pwd)){
+            resultMap.put("code",400);
+            resultMap.put("msg","account not exist~！");
+            return  resultMap;
+        }
+
+        resultMap.put("code",200);
+        resultMap.put("msg","login successful~！");
+        return  resultMap;
     }
 }
