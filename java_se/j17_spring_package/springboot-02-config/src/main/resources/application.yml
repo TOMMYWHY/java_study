@@ -1,0 +1,18 @@
+person:
+
+  userName: tommy
+  boss: false
+  birth: 1989/11/27
+  interests:
+    - java
+    - php
+    - python
+  score: {english:80,math:90}
+  salary:
+    - 999.00
+    - 888.99
+
+
+
+
+

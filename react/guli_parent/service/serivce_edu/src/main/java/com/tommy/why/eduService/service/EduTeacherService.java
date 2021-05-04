@@ -1,6 +1,6 @@
-package com.tommy.why.eduService.service;
+package com.tommy.why.eduservice.service;
 
-import com.tommy.why.eduService.entity.EduTeacher;
+import com.tommy.why.eduservice.entity.EduTeacher;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 /**
@@ -9,7 +9,7 @@ import com.baomidou.mybatisplus.extension.service.IService;
  * </p>
  *
  * @author TommyJiang
- * @since 2021-02-12
+ * @since 2021-02-14
  */
 public interface EduTeacherService extends IService<EduTeacher> {
 

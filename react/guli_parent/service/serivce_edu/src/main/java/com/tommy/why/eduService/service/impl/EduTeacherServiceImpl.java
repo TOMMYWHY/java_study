@@ -1,8 +1,8 @@
-package com.tommy.why.eduService.service.impl;
+package com.tommy.why.eduservice.service.impl;
 
-import com.tommy.why.eduService.entity.EduTeacher;
-import com.tommy.why.eduService.mapper.EduTeacherMapper;
-import com.tommy.why.eduService.service.EduTeacherService;
+import com.tommy.why.eduservice.entity.EduTeacher;
+import com.tommy.why.eduservice.mapper.EduTeacherMapper;
+import com.tommy.why.eduservice.service.EduTeacherService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 
@@ -12,7 +12,7 @@ import org.springframework.stereotype.Service;
  * </p>
  *
  * @author TommyJiang
- * @since 2021-02-12
+ * @since 2021-02-14
  */
 @Service
 public class EduTeacherServiceImpl extends ServiceImpl<EduTeacherMapper, EduTeacher> implements EduTeacherService {

@@ -1,5 +1,162 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5b712020-b823-4463-aa4a-14574c857c50" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__asm_asm_3_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__cglib_cglib_nodep_3_3_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_9_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring01_ioc_hello/src/main/java/com/tommy/why/dao/GoodsDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring01_ioc_hello/src/main/java/com/tommy/why/factory/InstanceFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring01_ioc_hello/src/main/java/com/tommy/why/factory/StaticFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring01_ioc_hello/src/main/java/com/tommy/why/service/IOrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring01_ioc_hello/src/main/java/com/tommy/why/service/impl/IOrderServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring01_ioc_hello/src/main/resources/beans-di.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring01_ioc_hello/src/main/resources/beans-factory.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring02_aop_dyn_proxy/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring02_aop_dyn_proxy/spring02_aop_dyn_proxy.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring02_aop_dyn_proxy/src/main/java/com/tommy/why/Starter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring02_aop_dyn_proxy/src/main/java/com/tommy/why/TestService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring02_aop_dyn_proxy/src/main/java/com/tommy/why/pay/DollarPay.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring02_aop_dyn_proxy/src/main/java/com/tommy/why/pay/Pay.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring02_aop_dyn_proxy/src/main/java/com/tommy/why/pay/RmbPay.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring02_aop_dyn_proxy/src/main/java/com/tommy/why/proxy/CglibInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring02_aop_dyn_proxy/src/main/java/com/tommy/why/proxy/MyjdkHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring02_aop_dyn_proxy/target/classes/com/tommy/why/Starter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring02_aop_dyn_proxy/target/classes/com/tommy/why/pay/DollarPay.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring02_aop_dyn_proxy/target/classes/com/tommy/why/pay/Pay.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring02_aop_dyn_proxy/target/classes/com/tommy/why/pay/RmbPay.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring02_aop_dyn_proxy/target/classes/com/tommy/why/proxy/MyjdkHandler.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_aop_proxy/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_aop_proxy/spring_aop_proxy.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_aop_proxy/src/main/java/com/tommy/why/Starter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_aop_proxy/src/main/java/com/tommy/why/proxy/LogAnnotationProxy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_aop_proxy/src/main/java/com/tommy/why/proxy/LogXml.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_aop_proxy/src/main/resources/spring-aop-01.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_aop_proxy/src/main/resources/spring-aop-02.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_aop_proxy/target/classes/com/tommy/why/Starter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_aop_proxy/target/classes/com/tommy/why/pay/DollarPay.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_aop_proxy/target/classes/com/tommy/why/pay/Pay.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_aop_proxy/target/classes/com/tommy/why/pay/RmbPay.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_aop_proxy/target/classes/com/tommy/why/proxy/LogAnnotationProxy.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_aop_proxy/target/classes/spring-aop-01.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../interview/design_pattern/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../interview/design_pattern/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../interview/design_pattern/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../interview/design_pattern/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../interview/design_pattern/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../interview/design_pattern/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../j16_springboot/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../j16_springboot/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../j16_springboot/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../j16_springboot/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../j16_springboot/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../j16_springboot/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../j16_springboot/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_11_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../j16_springboot/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_11_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../j16_springboot/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_11_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../j16_springboot/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_11_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../j16_springboot/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_11_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../j16_springboot/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_11_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../j16_springboot/.idea/libraries/Maven__com_google_protobuf_protobuf_java_3_11_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../j16_springboot/.idea/libraries/Maven__com_zaxxer_HikariCP_2_7_9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../j16_springboot/.idea/libraries/Maven__jakarta_servlet_jakarta_servlet_api_4_0_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../j16_springboot/.idea/libraries/Maven__jakarta_websocket_jakarta_websocket_api_1_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../j16_springboot/.idea/libraries/Maven__javax_annotation_javax_annotation_api_1_3_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../j16_springboot/.idea/libraries/Maven__junit_junit_4_13.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../j16_springboot/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_10_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../j16_springboot/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_10_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../j16_springboot/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_9_0_37.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../j16_springboot/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_9_0_37.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../j16_springboot/.idea/libraries/Maven__org_eclipse_jetty_jetty_annotations_9_4_35_v20201120.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../j16_springboot/.idea/libraries/Maven__org_eclipse_jetty_jetty_client_9_4_35_v20201120.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../j16_springboot/.idea/libraries/Maven__org_eclipse_jetty_jetty_continuation_9_4_35_v20201120.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../j16_springboot/.idea/libraries/Maven__org_eclipse_jetty_jetty_http_9_4_35_v20201120.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../j16_springboot/.idea/libraries/Maven__org_eclipse_jetty_jetty_io_9_4_35_v20201120.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../j16_springboot/.idea/libraries/Maven__org_eclipse_jetty_jetty_plus_9_4_35_v20201120.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../j16_springboot/.idea/libraries/Maven__org_eclipse_jetty_jetty_security_9_4_35_v20201120.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../j16_springboot/.idea/libraries/Maven__org_eclipse_jetty_jetty_server_9_4_35_v20201120.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../j16_springboot/.idea/libraries/Maven__org_eclipse_jetty_jetty_servlet_9_4_35_v20201120.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../j16_springboot/.idea/libraries/Maven__org_eclipse_jetty_jetty_servlets_9_4_35_v20201120.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../j16_springboot/.idea/libraries/Maven__org_eclipse_jetty_jetty_util_9_4_35_v20201120.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../j16_springboot/.idea/libraries/Maven__org_eclipse_jetty_jetty_util_ajax_9_4_35_v20201120.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../j16_springboot/.idea/libraries/Maven__org_eclipse_jetty_jetty_webapp_9_4_35_v20201120.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../j16_springboot/.idea/libraries/Maven__org_eclipse_jetty_jetty_xml_9_4_35_v20201120.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../j16_springboot/.idea/libraries/Maven__org_eclipse_jetty_websocket_javax_websocket_client_impl_9_4_35_v20201120.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../j16_springboot/.idea/libraries/Maven__org_eclipse_jetty_websocket_javax_websocket_server_impl_9_4_35_v20201120.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../j16_springboot/.idea/libraries/Maven__org_eclipse_jetty_websocket_websocket_api_9_4_35_v20201120.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../j16_springboot/.idea/libraries/Maven__org_eclipse_jetty_websocket_websocket_client_9_4_35_v20201120.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../j16_springboot/.idea/libraries/Maven__org_eclipse_jetty_websocket_websocket_common_9_4_35_v20201120.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../j16_springboot/.idea/libraries/Maven__org_eclipse_jetty_websocket_websocket_server_9_4_35_v20201120.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../j16_springboot/.idea/libraries/Maven__org_eclipse_jetty_websocket_websocket_servlet_9_4_35_v20201120.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../j16_springboot/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../j16_springboot/.idea/libraries/Maven__org_mybatis_mybatis_spring_2_0_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../j16_springboot/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_autoconfigure_2_0_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../j16_springboot/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_starter_2_0_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../j16_springboot/.idea/libraries/Maven__org_ow2_asm_asm_9_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../j16_springboot/.idea/libraries/Maven__org_ow2_asm_asm_analysis_9_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../j16_springboot/.idea/libraries/Maven__org_ow2_asm_asm_commons_9_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../j16_springboot/.idea/libraries/Maven__org_ow2_asm_asm_tree_9_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../j16_springboot/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_25.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../j16_springboot/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../j16_springboot/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_0_8_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../j16_springboot/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_2_0_8_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../j16_springboot/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jetty_2_4_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../j16_springboot/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_3_3_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../j16_springboot/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_0_8_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../j16_springboot/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_3_3_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../j16_springboot/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_3_3_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../j16_springboot/.idea/libraries/Maven__org_springframework_spring_aop_5_2_8_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../j16_springboot/.idea/libraries/Maven__org_springframework_spring_beans_5_2_8_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../j16_springboot/.idea/libraries/Maven__org_springframework_spring_core_5_0_12_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../j16_springboot/.idea/libraries/Maven__org_springframework_spring_expression_5_2_8_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../j16_springboot/.idea/libraries/Maven__org_springframework_spring_jcl_5_0_12_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../j16_springboot/.idea/libraries/Maven__org_springframework_spring_jdbc_5_0_12_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../j16_springboot/.idea/libraries/Maven__org_springframework_spring_tx_5_0_12_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../j16_springboot/.idea/libraries/Maven__org_springframework_spring_web_5_2_8_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../j16_springboot/.idea/libraries/Maven__org_springframework_spring_webmvc_5_2_8_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../j16_springboot/.idea/libraries/Maven__org_yaml_snakeyaml_1_19.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../j16_springboot/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../j16_springboot/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../j16_springboot/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../j16_springboot/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../j16_springboot/springcloud01/spirngcloud-api/spirngcloud-api.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../j16_springboot/springcloud01/spirngcloud-api/spirngcloud-api.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../j17_spring_package/springboot-01-helloworld/springboot-01-helloworld.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../j17_spring_package/springboot-01-helloworld/springboot-01-helloworld.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../j17_spring_package/springboot-01-helloworld/src/main/java/com/tommy/why/MainApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../j17_spring_package/springboot-01-helloworld/src/main/java/com/tommy/why/MainApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../j17_spring_package/springboot-01-helloworld/src/main/java/com/tommy/why/config/MyConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../j17_spring_package/springboot-01-helloworld/src/main/java/com/tommy/why/config/MyConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../j17_spring_package/springboot-01-helloworld/src/main/java/com/tommy/why/pojo/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../j17_spring_package/springboot-01-helloworld/src/main/java/com/tommy/why/pojo/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../j17_spring_package/springboot-01-helloworld/src/main/resources/beans.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../j17_spring_package/springboot-01-helloworld/src/main/resources/beans.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../j17_spring_package/springboot-01-helloworld/target/classes/com/tommy/why/MainApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/../j17_spring_package/springboot-01-helloworld/target/classes/com/tommy/why/MainApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/j18_spring5.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/j18_spring5.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/porm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/porm.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring01_ioc_hello/spring01_ioc_hello.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spring01_ioc_hello/spring01_ioc_hello.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring01_ioc_hello/src/main/java/com/tommy/why/dao/GoodsDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring01_ioc_hello/src/main/java/com/tommy/why/dao/GoodsDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring01_ioc_hello/src/main/java/com/tommy/why/service/impl/IGoodsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring01_ioc_hello/src/main/java/com/tommy/why/service/impl/IGoodsServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring01_ioc_hello/src/main/resources/dao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring01_ioc_hello/src/main/resources/dao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring01_ioc_hello/src/main/resources/service.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring01_ioc_hello/src/main/resources/service.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring01_ioc_hello/src/test/java/com/tommy/why/TestSpringXml.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring01_ioc_hello/src/test/java/com/tommy/why/TestSpringXml.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring01_ioc_hello/target/classes/com/tommy/why/dao/GoodsDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring01_ioc_hello/target/classes/com/tommy/why/dao/GoodsDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring01_ioc_hello/target/classes/com/tommy/why/service/impl/IGoodsServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring01_ioc_hello/target/classes/com/tommy/why/service/impl/IGoodsServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring01_ioc_hello/target/classes/dao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring01_ioc_hello/target/classes/dao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring01_ioc_hello/target/classes/service.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring01_ioc_hello/target/classes/service.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring01_ioc_hello/target/test-classes/com/tommy/why/TestSpringXml.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring01_ioc_hello/target/test-classes/com/tommy/why/TestSpringXml.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="spring-config" />
+        <option value="mybatis-mapper" />
+        <option value="Interface" />
+        <option value="spring-beans.schema" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -12,7 +169,193 @@
   <component name="MavenRunner">
     <option name="jreName" value="1.8" />
   </component>
+  <component name="ProjectId" id="1nIBAvP0R5ZWw9ZeIYySmC63kHl" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/spring_aop_proxy/src/main/resources" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.19804741" />
     <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.runner" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/spring_aop_proxy/src/main/resources" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/spring_aop_proxy/src/main/resources" />
+      <recent name="$PROJECT_DIR$/spring_aop_proxy/src/main/java/com/tommy/why" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.tommy.why.pay" />
+      <recent name="com.tommy.why.dao" />
+      <recent name="com.tommy.why.service.impl" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Starter (1)">
+    <configuration name="Starter (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.tommy.why.Starter" />
+      <module name="spring_aop_proxy" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tommy.why.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Starter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.tommy.why.Starter" />
+      <module name="spring02_aop_dyn_proxy" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tommy.why.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="All in spring_aop_proxy" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring_aop_proxy" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestSpringXml.test03_InstanceFactory" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring01_ioc_hello" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tommy.why.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.tommy.why" />
+      <option name="MAIN_CLASS_NAME" value="com.tommy.why.TestSpringXml" />
+      <option name="METHOD_NAME" value="test03_InstanceFactory" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestSpringXml.test05_di" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring01_ioc_hello" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tommy.why.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.tommy.why" />
+      <option name="MAIN_CLASS_NAME" value="com.tommy.why.TestSpringXml" />
+      <option name="METHOD_NAME" value="test05_di" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Starter (1)" />
+        <item itemvalue="JUnit.All in spring_aop_proxy" />
+        <item itemvalue="Application.Starter" />
+        <item itemvalue="JUnit.TestSpringXml.test05_di" />
+        <item itemvalue="JUnit.TestSpringXml.test03_InstanceFactory" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5b712020-b823-4463-aa4a-14574c857c50" name="Default Changelist" comment="" />
+      <created>1611067584975</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1611067584975</updated>
+      <workItem from="1611067586024" duration="4779000" />
+      <workItem from="1611285820047" duration="20376000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="258" y="43" key="#Project_Structure" timestamp="1611375958373">
+      <screen x="0" y="23" width="1394" height="877" />
+    </state>
+    <state x="258" y="43" key="#Project_Structure/0.23.1394.877@0.23.1394.877" timestamp="1611375958373" />
+    <state x="258" y="43" key="#Project_Structure/0.23.1396.877@0.23.1396.877" timestamp="1611068626175" />
+    <state x="582" y="175" key="#com.intellij.ide.util.MemberChooser" timestamp="1611373925406">
+      <screen x="0" y="23" width="1394" height="877" />
+    </state>
+    <state x="582" y="175" key="#com.intellij.ide.util.MemberChooser/0.23.1393.877@0.23.1393.877" timestamp="1611303571516" />
+    <state x="582" y="175" key="#com.intellij.ide.util.MemberChooser/0.23.1394.877@0.23.1394.877" timestamp="1611373925406" />
+    <state x="583" y="175" key="#com.intellij.ide.util.MemberChooser/0.23.1396.877@0.23.1396.877" timestamp="1611068807573" />
+    <state x="400" y="312" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1611370661762">
+      <screen x="0" y="23" width="1394" height="877" />
+    </state>
+    <state x="400" y="312" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.23.1394.877@0.23.1394.877" timestamp="1611370661762" />
+    <state width="1351" height="341" key="GridCell.Tab.0.bottom" timestamp="1611394717374">
+      <screen x="0" y="23" width="1394" height="877" />
+    </state>
+    <state width="1208" height="231" key="GridCell.Tab.0.bottom/0.23.1391.877@0.23.1391.877" timestamp="1611290476542" />
+    <state width="1351" height="341" key="GridCell.Tab.0.bottom/0.23.1393.877@0.23.1393.877" timestamp="1611303689788" />
+    <state width="1351" height="341" key="GridCell.Tab.0.bottom/0.23.1394.877@0.23.1394.877" timestamp="1611394717374" />
+    <state width="1351" height="341" key="GridCell.Tab.0.bottom/0.23.1396.877@0.23.1396.877" timestamp="1611392240522" />
+    <state width="1351" height="341" key="GridCell.Tab.0.center" timestamp="1611394717373">
+      <screen x="0" y="23" width="1394" height="877" />
+    </state>
+    <state width="1208" height="231" key="GridCell.Tab.0.center/0.23.1391.877@0.23.1391.877" timestamp="1611290476541" />
+    <state width="1351" height="341" key="GridCell.Tab.0.center/0.23.1393.877@0.23.1393.877" timestamp="1611303689788" />
+    <state width="1351" height="341" key="GridCell.Tab.0.center/0.23.1394.877@0.23.1394.877" timestamp="1611394717373" />
+    <state width="1351" height="341" key="GridCell.Tab.0.center/0.23.1396.877@0.23.1396.877" timestamp="1611392240522" />
+    <state width="1351" height="341" key="GridCell.Tab.0.left" timestamp="1611394717372">
+      <screen x="0" y="23" width="1394" height="877" />
+    </state>
+    <state width="1208" height="231" key="GridCell.Tab.0.left/0.23.1391.877@0.23.1391.877" timestamp="1611290476541" />
+    <state width="1351" height="341" key="GridCell.Tab.0.left/0.23.1393.877@0.23.1393.877" timestamp="1611303689788" />
+    <state width="1351" height="341" key="GridCell.Tab.0.left/0.23.1394.877@0.23.1394.877" timestamp="1611394717372" />
+    <state width="1351" height="341" key="GridCell.Tab.0.left/0.23.1396.877@0.23.1396.877" timestamp="1611392240521" />
+    <state width="1351" height="341" key="GridCell.Tab.0.right" timestamp="1611394717373">
+      <screen x="0" y="23" width="1394" height="877" />
+    </state>
+    <state width="1208" height="231" key="GridCell.Tab.0.right/0.23.1391.877@0.23.1391.877" timestamp="1611290476542" />
+    <state width="1351" height="341" key="GridCell.Tab.0.right/0.23.1393.877@0.23.1393.877" timestamp="1611303689788" />
+    <state width="1351" height="341" key="GridCell.Tab.0.right/0.23.1394.877@0.23.1394.877" timestamp="1611394717373" />
+    <state width="1351" height="341" key="GridCell.Tab.0.right/0.23.1396.877@0.23.1396.877" timestamp="1611392240522" />
+    <state x="254" y="43" key="SettingsEditor" timestamp="1611067596918">
+      <screen x="0" y="23" width="1396" height="877" />
+    </state>
+    <state x="254" y="43" key="SettingsEditor/0.23.1396.877@0.23.1396.877" timestamp="1611067596918" />
+    <state x="397" y="187" width="598" height="548" key="find.popup" timestamp="1611370639219">
+      <screen x="0" y="23" width="1394" height="877" />
+    </state>
+    <state x="397" y="187" width="598" height="548" key="find.popup/0.23.1394.877@0.23.1394.877" timestamp="1611370639219" />
+    <state x="130" y="226" key="new project wizard" timestamp="1611375920585">
+      <screen x="0" y="23" width="1394" height="877" />
+    </state>
+    <state x="130" y="226" key="new project wizard/0.23.1394.877@0.23.1394.877" timestamp="1611375920585" />
+    <state x="132" y="124" key="new project wizard/0.23.1396.877@0.23.1396.877" timestamp="1611068181118" />
+    <state x="329" y="152" key="spring file set editor" timestamp="1611380746098">
+      <screen x="0" y="23" width="1394" height="877" />
+    </state>
+    <state x="329" y="152" key="spring file set editor/0.23.1394.877@0.23.1394.877" timestamp="1611380746098" />
+    <state x="329" y="152" key="spring file set editor/0.23.1396.877@0.23.1396.877" timestamp="1611068656289" />
   </component>
 </project>

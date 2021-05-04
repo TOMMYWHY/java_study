@@ -1,6 +1,6 @@
-package com.tommy.why.eduService.mapper;
+package com.tommy.why.eduservice.mapper;
 
-import com.tommy.why.eduService.entity.EduTeacher;
+import com.tommy.why.eduservice.entity.EduTeacher;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
 /**
@@ -9,7 +9,7 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
  * </p>
  *
  * @author TommyJiang
- * @since 2021-02-12
+ * @since 2021-02-14
  */
 public interface EduTeacherMapper extends BaseMapper<EduTeacher> {
 

@@ -4,5 +4,9 @@
     <file url="file://$PROJECT_DIR$/springboot01-hello/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot02-config/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot03-web/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot04-jdbc/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springcloud01/spirngcloud-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springcloud01/spirngcloud-api/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springcloud01/springcloud-privider-dept2-8002/src/main/java" charset="UTF-8" />
   </component>
 </project>

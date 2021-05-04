@@ -42,5 +42,7 @@
     </build>
     <modules>
         <module>spring01_ioc_hello</module>
+        <module>spring02_aop_dyn_proxy</module>
+        <module>spring_aop_proxy</module>
     </modules>
 </project>

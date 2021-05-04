@@ -1,4 +1,4 @@
 package com.tommy.why.dao;
 
-public class GoodsDao {
+public interface GoodsDao {
 }

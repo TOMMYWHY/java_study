@@ -2,9 +2,30 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>$Title$</title>
+  <title>Title</title>
 </head>
 <body>
-$END$
+        <h1>promise</h1>
 </body>
 </html>
+
+<script>
+    const p = new Promise((resolve,reject)=>{
+        setTimeout(()=>{
+            let num = Math.random();
+            if(num<0.5){
+                resolve("success " +num)
+            }else{
+                reject("err "+num)
+            }
+        },500)
+    })
+    console.log(1111)
+    p.then(value => {
+        console.log(value)
+    }).catch(reason => {
+        console.log(reason)
+    })
+    console.log(2222)
+
+</script>

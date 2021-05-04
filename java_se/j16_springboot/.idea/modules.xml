@@ -3,9 +3,13 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/j16_springboot.iml" filepath="$PROJECT_DIR$/.idea/j16_springboot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloud01/spirngcloud-api/spirngcloud-api.iml" filepath="$PROJECT_DIR$/springcloud01/spirngcloud-api/spirngcloud-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot01-hello/springboot01-hello.iml" filepath="$PROJECT_DIR$/springboot01-hello/springboot01-hello.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot02-config/springboot02-config.iml" filepath="$PROJECT_DIR$/springboot02-config/springboot02-config.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot03-web/springboot03-web.iml" filepath="$PROJECT_DIR$/springboot03-web/springboot03-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot04-jdbc/springboot04-jdbc.iml" filepath="$PROJECT_DIR$/springboot04-jdbc/springboot04-jdbc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloud01/springcloud-privider-dept2-8002/springcloud-privider-dept2-8002.iml" filepath="$PROJECT_DIR$/springcloud01/springcloud-privider-dept2-8002/springcloud-privider-dept2-8002.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloud01/springcloud-provider-dept-8001/springcloud-provider-dept-8001.iml" filepath="$PROJECT_DIR$/springcloud01/springcloud-provider-dept-8001/springcloud-provider-dept-8001.iml" />
     </modules>
   </component>
 </project>

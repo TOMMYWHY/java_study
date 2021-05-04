@@ -6,16 +6,27 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="springboot01-hello" />
-        <module name="springboot02-config" />
+        <module name="springcloud-provider-dept-8001" />
         <module name="springboot03-web" />
+        <module name="springboot01-hello" />
+        <module name="springcloud-provider-dept" />
+        <module name="springcloud-privider-dept2-8002" />
+        <module name="springboot04-jdbc" />
+        <module name="springboot02-config" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="spirngcloud-api" target="1.8" />
       <module name="springboot01-hello" target="1.8" />
       <module name="springboot01-helloworld" target="1.8" />
       <module name="springboot02-config" target="1.8" />
       <module name="springboot03-web" target="1.8" />
+      <module name="springboot04-jdbc" target="1.8" />
+      <module name="springcloud-privider-dept2-8002" target="1.8" />
+      <module name="springcloud-provider-dept" target="1.5" />
+      <module name="springcloud-provider-dept-8001" target="1.5" />
+      <module name="springcloud-provider-dept-8002" target="1.8" />
+      <module name="springcloud01" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -24,6 +35,9 @@
       <module name="springboot01-helloworld" options="-parameters" />
       <module name="springboot02-config" options="-parameters" />
       <module name="springboot03-web" options="-parameters" />
+      <module name="springboot04-jdbc" options="-parameters" />
+      <module name="springcloud-privider-dept2-8002" options="-parameters" />
+      <module name="springcloud-provider-dept-8002" options="-parameters" />
     </option>
   </component>
 </project>

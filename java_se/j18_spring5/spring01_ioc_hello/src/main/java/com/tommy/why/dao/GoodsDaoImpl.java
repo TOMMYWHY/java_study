@@ -1,2 +1,4 @@
-package com.tommy.why.dao;public class GoodsDaoImpl {
+package com.tommy.why.dao;
+
+public class GoodsDaoImpl implements GoodsDao {
 }

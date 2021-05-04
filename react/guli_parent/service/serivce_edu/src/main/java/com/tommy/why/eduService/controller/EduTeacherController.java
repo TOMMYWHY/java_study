@@ -1,9 +1,12 @@
-package com.tommy.why.eduService.controller;
+package com.tommy.why.eduservice.controller;
 
 
-import org.springframework.web.bind.annotation.RequestMapping;
+import com.tommy.why.eduservice.entity.EduTeacher;
+import com.tommy.why.eduservice.service.EduTeacherService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
 
-import org.springframework.web.bind.annotation.RestController;
+import java.util.List;
 
 /**
  * <p>
@@ -11,11 +14,25 @@ import org.springframework.web.bind.annotation.RestController;
  * </p>
  *
  * @author TommyJiang
- * @since 2021-02-12
+ * @since 2021-02-14
  */
 @RestController
-@RequestMapping("/eduService/teacher")
+@RequestMapping("/eduservice/teacher")
 public class EduTeacherController {
+    @Autowired
+    private EduTeacherService teacherService;
 
+    @GetMapping("findAll")
+    public List<EduTeacher> findAllTeacher(){
+        System.out.println("teacherService：" + teacherService);
+        List<EduTeacher> list = teacherService.list(null);
+        return list;
+    }
+
+    @DeleteMapping("delete/{id}")
+    public boolean removeTeacher(@PathVariable String id){
+        boolean result = teacherService.removeById(id);
+        return result;
+    }
 }
 

@@ -1,9 +1,11 @@
-package com.tommy.why.eduService.entity;
+package com.tommy.why.eduservice.entity;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import java.util.Date;
 import com.baomidou.mybatisplus.annotation.TableId;
 import java.io.Serializable;
+
+import com.baomidou.mybatisplus.annotation.TableLogic;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
@@ -16,7 +18,7 @@ import lombok.experimental.Accessors;
  * </p>
  *
  * @author TommyJiang
- * @since 2021-02-12
+ * @since 2021-02-14
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
@@ -48,7 +50,9 @@ public class EduTeacher implements Serializable {
     @ApiModelProperty(value = "排序")
     private Integer sort;
 
+
     @ApiModelProperty(value = "逻辑删除 1（true）已删除， 0（false）未删除")
+    @TableLogic
     private Boolean isDeleted;
 
     @ApiModelProperty(value = "创建时间")

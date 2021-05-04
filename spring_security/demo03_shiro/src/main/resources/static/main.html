@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <script>
+
+        $(document).ready(function (){
+            $.post("/common/getCurrentUser",{
+
+            },function (response){
+                // response.info(response);
+                console.log(response)
+                $("#pageInfo").html("welcome "+ response.userName);
+                // $("*[Auth]").hidden;
+            })
+        })
+
+    </script>
+</head>
+<body>
+<h1>aaaa</h1>
+    <h1 id="pageInfo" ><h1/>
+</body>
+</html>

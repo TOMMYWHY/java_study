@@ -6,10 +6,19 @@
         <option value="$PROJECT_DIR$/springboot01-hello/pom.xml" />
         <option value="$PROJECT_DIR$/springboot02-config/pom.xml" />
         <option value="$PROJECT_DIR$/springboot03-web/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot04-jdbc/pom.xml" />
+        <option value="$PROJECT_DIR$/springcloud-privider-dept2-8002/pom.xml" />
+        <option value="$PROJECT_DIR$/springcloud01/spirngcloud-api/pom.xml" />
+        <option value="$PROJECT_DIR$/springcloud01/springcloud-privider-dept2-8002/pom.xml" />
       </list>
     </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/springcloud01/springcloud-provider-dept/pom.xml" />
+      </set>
+    </option>
   </component>
-  <component name="ProjectRootManager">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_14" default="false" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>

@@ -1,2 +1,4 @@
-package com.tommy.why.service;public interface IOrderService {
+package com.tommy.why.service;
+
+public interface IOrderService {
 }

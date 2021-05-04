@@ -4,6 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/j18_spring5.iml" filepath="$PROJECT_DIR$/.idea/j18_spring5.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring01_ioc_hello/spring01_ioc_hello.iml" filepath="$PROJECT_DIR$/spring01_ioc_hello/spring01_ioc_hello.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring02_aop_dyn_proxy/spring02_aop_dyn_proxy.iml" filepath="$PROJECT_DIR$/spring02_aop_dyn_proxy/spring02_aop_dyn_proxy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring_aop_proxy/spring_aop_proxy.iml" filepath="$PROJECT_DIR$/spring_aop_proxy/spring_aop_proxy.iml" />
     </modules>
   </component>
 </project>
