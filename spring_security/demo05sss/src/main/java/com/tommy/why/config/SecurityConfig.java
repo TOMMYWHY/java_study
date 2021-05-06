@@ -32,9 +32,15 @@ public class SecurityConfig  extends WebSecurityConfigurerAdapter {
                 .antMatchers("/del").hasAnyAuthority("delNumber")
                 .antMatchers("/update").hasAnyAuthority("updateNumber")
                 .antMatchers("/show").hasAnyAuthority("showNumber")
-//                .and().formLogin();
-                .antMatchers("/login").permitAll()
-                .antMatchers("/**").fullyAuthenticated().and().formLogin().loginPage("/login").and().csrf();
+//                .and()
+//                .formLogin()
+//                .loginPage("/login")
+//                .usernameParameter("username")
+//                .passwordParameter("password").loginProcessingUrl("/login") .defaultSuccessUrl("/")
+//                .and().csrf().disable();
+//        ;
+                .antMatchers( "/login").permitAll()
+                .antMatchers("/**").fullyAuthenticated().and().formLogin().loginPage("/login").and().csrf().disable();
     }
 
     @Bean
