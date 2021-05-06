@@ -21,3 +21,9 @@ https://www.bilibili.com/video/BV1mJ411k7Hd?t=18
    https://study.163.com/course/introduction.htm?courseId=1209674835#/courseDetail?tab=1
 
 > MockMvc??? https://www.bilibili.com/video/BV1jJ41187as?from=search&seid=18442034293119086011
+> 
+> 
+5. security
+https://www.bilibili.com/video/BV1pr4y1F7bC?p=3&spm_id_from=pageDriver
+   
+> security errorPage

@@ -10,12 +10,8 @@ public class IndexController {
 
     @GetMapping("/index")
     public String index(){return "index";}
-
-
-
     @GetMapping("/add")
     public String add(){return "111111111asddddd";}
-
     @GetMapping("/del")
     public String del(){return "deldeldeldeldel";}
     @GetMapping("/update")

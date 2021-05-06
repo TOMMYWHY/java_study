@@ -17,18 +17,29 @@ import org.springframework.stereotype.Component;
 public class SecurityConfig  extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
-        auth.inMemoryAuthentication().withUser("tommy").password("123").authorities("/");
+        auth.inMemoryAuthentication().withUser("tommy").password("123").authorities("addNumber","showNumber");
+        auth.inMemoryAuthentication().withUser("admin").password("123")
+                .authorities("addNumber","delNumber","updateNumber","showNumber");
+
     }
 
 
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
-        http.authorizeRequests().antMatchers("/**").fullyAuthenticated().and().httpBasic();
+        http.authorizeRequests()
+                .antMatchers("/add").hasAnyAuthority("addNumber")
+                .antMatchers("/del").hasAnyAuthority("delNumber")
+                .antMatchers("/update").hasAnyAuthority("updateNumber")
+                .antMatchers("/show").hasAnyAuthority("showNumber")
+//                .and().formLogin();
+                .antMatchers("/login").permitAll()
+                .antMatchers("/**").fullyAuthenticated().and().formLogin().loginPage("/login").and().csrf();
     }
 
     @Bean
     public static NoOpPasswordEncoder passwordEncoder(){
+
         return (NoOpPasswordEncoder) NoOpPasswordEncoder.getInstance();
     }
 }
