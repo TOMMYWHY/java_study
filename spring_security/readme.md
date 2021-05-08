@@ -26,4 +26,5 @@ https://www.bilibili.com/video/BV1mJ411k7Hd?t=18
 5. security
 https://www.bilibili.com/video/BV1pr4y1F7bC?p=3&spm_id_from=pageDriver
    
-> security errorPage  RBAC权限设计
+> security errorPage  RBAC权限设计   jwt
+> 

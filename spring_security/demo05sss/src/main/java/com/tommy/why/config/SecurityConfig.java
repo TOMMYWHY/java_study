@@ -2,6 +2,8 @@ package com.tommy.why.config;
 
 
 import com.tommy.why.entity.PermissionEntity;
+import com.tommy.why.filter.JWTLoginFilter;
+import com.tommy.why.filter.JWTValidationFilter;
 import com.tommy.why.mapper.PermissionMapper;
 import com.tommy.why.service.MemberUserDetailsService;
 import com.tommy.why.utils.MD5Util;
@@ -14,6 +16,7 @@ import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.builders.WebSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
+import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.crypto.password.NoOpPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Component;
@@ -38,12 +41,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Autowired
     private PermissionMapper permissionMapper;
 
-    /**
-     * 添加授权账户
-     *
-     * @param auth
-     * @throws Exception
-     */
+
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
 //        // 设置用户账号信息和权限
@@ -80,9 +78,12 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 //                .antMatchers("/delMember").hasAnyAuthority("delNumber")
 //                .antMatchers("/updateMember").hasAnyAuthority("updateNumber")
 //                .antMatchers("/showMember").hasAnyAuthority("showNumber")
-        expressionInterceptUrlRegistry.antMatchers("/login").permitAll()
-                .antMatchers("/**").fullyAuthenticated().and().formLogin().loginPage("/login")
-                .and().csrf().disable();
+        expressionInterceptUrlRegistry.antMatchers("/auth/login").permitAll()
+                .antMatchers("/**").fullyAuthenticated()
+                .and().addFilter(new JWTValidationFilter(authenticationManager()))
+                .addFilter(new JWTLoginFilter(authenticationManager())).csrf().disable()
+                .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS);
+//                .and().formLogin().loginPage("/login").and().csrf().disable();
     }
 
     @Bean
