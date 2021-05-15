@@ -28,10 +28,10 @@ class TodoItem extends Component {
 }
 
 TodoItem.propTypes = {
-    item: PropTypes.string,
+    item: PropTypes.string.isRequired,
     index: PropTypes.number,
     deleteItemA: PropTypes.func
 }
-
+TodoItem.defaultProps= {}
 
 export default TodoItem;

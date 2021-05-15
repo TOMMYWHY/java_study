@@ -18,14 +18,19 @@ class Todos extends Component {
     };
     inputChange = (e) => {
         this.setState({
-            inputValue: e.target.value,
+            // inputValue: e.target.value,
+            inputValue: this.input.value,
         });
-    };
+    }; 
     addItem = () => {
         this.setState({
             list: [this.state.inputValue, ...this.state.list],
             inputValue: '',
+        }, () => {
+            console.log(this.ul.querySelectorAll('li').length); //虚拟dom渲染延迟
+
         });
+        // console.log(this.ul.querySelectorAll('li').length); //虚拟dom渲染延迟
     };
     deleteItemAAAAA = (index) => {
         console.log(index);
@@ -47,6 +52,7 @@ class Todos extends Component {
                     type="text"
                     value={this.state.inputValue}
                     onChange={this.inputChange}
+                    ref={(input => { this.input = input })}
                 />
                 <button onClick={this.addItem}>add</button>
                 {/* <ul>
@@ -62,7 +68,7 @@ class Todos extends Component {
                     }
                 </ul> */}
                 <hr />
-                <ul>
+                <ul ref={(ul) => { this.ul = ul }}>
                     {
                         this.state.list.map((item, index) => {
                             return (

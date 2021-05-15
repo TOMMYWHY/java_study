@@ -12,3 +12,6 @@
 
 4. validation
 > 在类声明之后，小写propTypes
+
+5. setState
+> 异步方法，需要传第二个回调
