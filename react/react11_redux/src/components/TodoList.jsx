@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
-import { Input, Col, Button, List } from "antd";
-import 'antd/dist/antd.css'
-import '../index.css'
+// import { Input, Col, Button, List } from "antd";
+// import 'antd/dist/antd.css'
+// import '../index.css'
 
 import store from '../store/index'
-import { convertLegacyProps } from 'antd/lib/button/button';
+// import { DELETE_ITEM, ADD_ITEM, CHANGE_INPUT } from '../store/actionTypes'
+import { geMyListAction, changeInputAction, addItemAction, deleteItemAction, getListAction, getTodoListAction } from '../store/actionCreators'
+import TodoListUI from '../ui/todoListUI'
+import axios from 'axios'
 
 class TodoList extends Component {
     constructor(props) {
@@ -18,47 +21,54 @@ class TodoList extends Component {
     }
     changeValue = (e) => {
         // console.log(e.target.value);
-        const action = {
-            type: 'changeInput',
-            value: e.target.value
-        }
+        // const action = {
+        //     type: CHANGE_INPUT,
+        //     value: e.target.value
+        // }
+        const action = changeInputAction(e.target.value)
         store.dispatch(action)
     }
     clickBtn = () => {
-        const action = {
-            type: 'addItem',
-        }
+        // const action = {
+        //     type: ADD_ITEM,
+        // }
+        const action = addItemAction()
         store.dispatch(action)
     }
     deleteItem = (index) => {
         // console.log(index);
-        const action = {
-            type: 'deleteItem',
-            index:index
-        }
+        // const action = {
+        //     type: DELETE_ITEM,
+        //     index: index
+        // }
+
+        const action = deleteItemAction(index)
         store.dispatch(action)
+    }
+
+    componentDidMount = () => {
+        const action = geMyListAction()
+        store.dispatch(action);
+        
+        // const action = getTodoListAction()
+        // store.dispatch(action);
+
+        // const url = "https://www.easy-mock.com/mock/5cfcce489dc7c36bd6da2c99/xiaojiejie/getList"
+        // axios.get(url).then((res) => {
+        //     const data = res.data
+        //     const action = getListAction(data)
+        //     store.dispatch(action)
+        // })
     }
     render() {
         return (
-            <div >
-
-                <Col span='12' offset="6" className={'center'}>
-                    <h1>todo list</h1>
-                    <Input placeholder={this.state.inputValue} style={{ width: '250px' }}
-                        onChange={this.changeValue}
-                        value={this.state.inputValue}
-                    ></Input>
-                    <Button type='primary' onClick={this.clickBtn}>Add</Button>
-                    <br /><br />
-                    <List bordered dataSource={this.state.list}
-                        renderItem={(item, index) => {
-                            return (<List.Item onClick={() => { this.deleteItem(index) }}>{item}</List.Item>)
-                        }}>
-                    </List>
-                </Col>
-
-
-            </div >
+            <TodoListUI
+                inputValue={this.state.inputValue}
+                changeValue={this.changeValue}
+                clickBtn={this.clickBtn}
+                list={this.state.list}
+                deleteItem={this.deleteItem}
+            ></TodoListUI>
         );
     }
 }
