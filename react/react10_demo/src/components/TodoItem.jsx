@@ -4,11 +4,26 @@ import PropTypes from 'prop-types'
 
 class TodoItem extends Component {
     state = {}
+
+    /*
+    组件更新
+    */
+    shouldComponentUpdate = (nextProps, nextState) => {
+        if (nextProps.item !== this.props.item) {
+            return true;
+        } else {
+            return false;
+        }
+
+    }
+
     handleClick = () => {
         console.log(this.props.index);
         this.props.deleteItemA(this.props.index)
     }
+
     render() {
+        console.log("rendering....");
         // let item = this.props.item
         // let index = this.props.index
         let { item, index } = this.props
@@ -32,6 +47,6 @@ TodoItem.propTypes = {
     index: PropTypes.number,
     deleteItemA: PropTypes.func
 }
-TodoItem.defaultProps= {}
+TodoItem.defaultProps = {}
 
 export default TodoItem;

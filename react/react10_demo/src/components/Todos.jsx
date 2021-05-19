@@ -1,7 +1,8 @@
 import React, { Component, Fragment } from 'react';
 import TodoItem from './TodoItem';
-
-
+import Boss from "./Boss";
+import axios from 'axios'
+import "./style.css"
 class Todos extends Component {
     /*
       constructor(props){
@@ -21,7 +22,7 @@ class Todos extends Component {
             // inputValue: e.target.value,
             inputValue: this.input.value,
         });
-    }; 
+    };
     addItem = () => {
         this.setState({
             list: [this.state.inputValue, ...this.state.list],
@@ -43,6 +44,17 @@ class Todos extends Component {
     // deleteItem(index) {
     //     console.log(index)
     // }
+
+
+    componentDidMount = () => {
+        axios.post('https://web-api.juejin.im/v3/web/wbbr/bgeda')
+            .then((res) => {
+                console.log(res);
+                console.log(JSON.stringify(res));
+            }).catch((err) => {
+                console.log(err);
+            })
+    }
 
     render() {
         return (
@@ -77,6 +89,9 @@ class Todos extends Component {
                         })
                     }
                 </ul>
+
+                <hr />
+                <Boss></Boss>
 
 
 

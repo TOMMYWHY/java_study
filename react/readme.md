@@ -1,5 +1,7 @@
 # react 
 
+>https://jspang.com/detailed?id=56
+
 1. Fragment
 > 组件顶层容器使用Fragment
 
@@ -15,3 +17,28 @@
 
 5. setState
 > 异步方法，需要传第二个回调
+
+6. shouldComponentUpdate
+> 对比 props 前后是否变化在进行render
+
+7.  react-transition-group
+> animation
+
+8. redux
+> reducer action
+
+9. UI 分离
+
+10. 无状态组件
+
+11. redux with axios
+
+12. redux 中间件 
+> thunk
+> saga
+
+13. react router
+>
+
+14. react hooks
+>
