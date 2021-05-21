@@ -1,0 +1,24 @@
+$themeColor:skyblue;
+
+.App {
+  text-align: center; 
+  background-color: $themeColor;
+  height: 100vh;
+  h1{color:#fff;font-size: 2.6rem; margin: 0px;}
+}  
+.todo-list{
+  width: 300px;
+  background-color: #fff;
+  border-radius: 10px;
+  margin: 0 auto;
+  padding: 20px 20px 30px;
+} 
+.todo-item{
+  padding: 3px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+  button{color: $themeColor; border: 0; box-shadow: none; margin: 0 5px 0 15px; border-radius: 5px; color: blueviolet;}
+}
+
