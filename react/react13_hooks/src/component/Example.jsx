@@ -1,12 +1,26 @@
-import React, { Component, Fragment, useState } from 'react'
+import React, { Component, Fragment, useEffect, useState } from 'react'
 
 const Example = () => {
     const [count, setCount] = useState(0)
+    // console.log(useState(0));
+    const [name, setName] = useState('tommy')
+    const [age, setAge] = useState(18)
+
+    useEffect(() => {
+        console.log(`useEffect : ${count}`);
+        return () => {
+            console.log('destroy');
+        }
+    }, [count])
+
     return (
         <Fragment>
             <h1>{count}</h1>
             <hr />
             <button onClick={() => { setCount(count + 1) }}>add</button>
+            <hr />
+
+            <h2>{name}:{age}</h2>
         </Fragment>
     )
 }
