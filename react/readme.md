@@ -47,4 +47,5 @@
 > yarn add node-sass@4.14.1  .scss
 
 16. react next
-> 服务端渲染
+> 服务端渲染  
+>yarn create next-app xxxooo
