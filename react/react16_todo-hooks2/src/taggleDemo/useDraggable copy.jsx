@@ -1,32 +1,28 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
-const DRAGGABLE = "DRAGGABLE";
-const BAR = "BAR";
+const DRAGGABLE = "DRAGGABLE"
+const BAR = "BAR"
 
-function draggable(item, id) {
+const draggable = (item, id) => {
     return {
         type: DRAGGABLE,
         id,
         data: item
-    };
+    }
 }
-
-function insertBars(list) {
-    let i = 0; // ID
-
+const insertBars = (list) => {
+    let i = 0
     const newBar = () => {
         return {
             type: BAR,
             id: i++
-        };
-    };
-
-    // |A|B|C|
+        }
+    }
     return [newBar()].concat(
         ...list.map(item => {
             return [draggable(item, i++), newBar()];
         })
-    );
+    )
 }
 
 function clacChanging(list, drag, drop) {
@@ -47,52 +43,60 @@ function clacChanging(list, drag, drop) {
     return list;
 }
 
+
+
 export default function useDraggable(list) {
+    // console.log('22', list);
     const [dragList, setDragList] = useState(() => {
-        return insertBars(list);
-    });
-    const [dragOver, setDragOver] = useState(null);
-    const [dragging, setDragging] = useState(null);
+        return insertBars(list)
+    })
+    // console.log(1111, dragList);
+    const [dragOver, setDragOver] = useState(null)
+    const [dragging, setDragging] = useState(null)
 
     return {
         dragList,
         createDropperProps: id => {
             return {
+                // id,
+                // key: id,
                 dragging,
                 dragOver,
                 eventHandlers: {
-                    onDragOver: e => {
-                        e.preventDefault();
-                        setDragOver(id);
+                    ondragover: (e) => {
+                        e.preventDefault()
+                        setDragOver(id)
                     },
-                    onDragLeave: e => {
-                        e.preventDefault();
-                        setDragOver(null);
+                    ondragleave: e => {
+                        e.preventDefault()
+                        setDragOver(null)
                     },
                     onDrop: e => {
-                        e.preventDefault();
-                        setDragOver(null);
+                        e.preventDefault()
+                        setDragOver(null)
                         setDragList(list => {
-                            return clacChanging(list, dragging, id);
-                        });
+                            return clacChanging(list, dragging, id)
+                        })
                     }
                 }
-            };
+            }
         },
-        createDraggerProps: (id, key) => {
+        createDraggerProps: id => {
             return {
                 id,
-                key,
+                key: id,
                 dragging,
                 eventHandlers: {
-                    onDragStart: () => {
-                        setDragging(id);
+                    ondragstart: () => {
+                        setDragging(id)
                     },
-                    onDragEnd: () => {
-                        setDragging(null);
+                    ondragend: () => {
+                        setDragging(null)
                     }
                 }
-            };
+            }
         }
-    };
-}
+    }
+};
+
+// export default useDraggable
